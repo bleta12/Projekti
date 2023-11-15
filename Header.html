@@ -5,32 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sell Art</title>
     <link rel="stylesheet" href="Header.css">
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+    crossorigin="anonymous"></script>
+    <script>
+    $(function() {
+    $(".toggle").on("click", function() {
+        if ($(".item").hasClass("active")) {
+            $(".item").removeClass("active");
+        } else {
+            $(".item").addClass("active");
+        }
+    });
+});
+    </script>
 </head>
 <body>
   <header>
-    <div class="main">
-      <div class="navbar">
-          <div class="icon">
-            <img src="sell art.png" alt="">
-          </div>
-
-          <div class="menu">
-              <ul>
-                  <li><a href="#">HOME</a></li>
-                  <li><a href="#">ABOUT</a></li>
-                  <li><a href="#">SERVICE</a></li>
-                  <li><a href="#">DESIGN</a></li>
-                  <li><a href="#">CONTACT</a></li>
-              </ul>
-          </div>
-
-          <div class="search">
-              <a href="#"><button class="btn">Log in</button></a>
-              <a href="#"> <button class="btn">Sign up</button></a>
-          </div>
-        </div>
-    </div>
+    <nav>
+      <ul class="menu">
+          <li class="logo"><img src="sell art.png" alt="Sell Art"></li>
+          <li class="item"><a href="#">Home</a></li>
+          <li class="item"><a href="#">About</a></li>
+          <li class="item"><a href="#">Services</a></li>
+          </li>
+          <li class="item button"><a href="#">Log In</a></li>
+          <li class="item button secondary"><a href="#">Sign Up</a></li>
+          <li class="toggle"><span class="bars"></span></li>
+      </ul>
+  </nav>
   </header>
+  <body>
+    <div>
+       
+    </div>
+  </body>
+  <footer>
+
+  </footer>
 </body>
 </html>
 
