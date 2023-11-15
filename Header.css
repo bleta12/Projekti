@@ -1,0 +1,35 @@
+
+nav img{
+     width: 200px;
+     float: left;
+}
+.container{
+    display: flexbox;
+}
+.lista1 ul{
+    display: flex;
+    list-style-type: none;
+    width: 30%;
+    justify-content: space-evenly;
+    padding-top: 20px; 
+    
+}
+.lista1 ul li{
+    text-transform: uppercase;
+}
+.lista1 ul li:hover {
+    font-weight: bold;
+    cursor: pointer;
+    border-bottom: 3px solid rgb(76, 51, 51);
+}
+.lista1 ul li a{
+    text-decoration: none;
+    color: black;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.buton{
+  
+  
+   
+}
+
