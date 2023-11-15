@@ -1,13 +1,14 @@
-
+body{
+    background-color:light;
+}
 .main{
     width: 1440px;
     background-position: center;
     background-size: cover;
-    height: 100vh;
 }
 
 .navbar{
-    background-color: blanchedalmond;
+    background-color: rgb(246, 240, 233);
     width: 100%;
     height: 80px;
     margin: auto;
@@ -87,4 +88,16 @@ ul li a:hover{
 .srch:focus{
     outline: none;
 }
+/*prej qetu ja nis body*/
+
+body{
+    display: flex;
+    
+}
+
+
+
+
+
+
 
