@@ -1,117 +1,14 @@
+header{
+    text-align: center;
 
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 }
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+float: left;}
 
-
-.KRYESOR {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    gap: 20px; 
+img{
+    width:100%
 }
-
-
-.P1,
-.P2,
-.P3,
-.P4,
-.P5,
-.P6,
-.P7,
-.P8,
-.P9 {
-    text-align: center; 
-}
-
-
-.img {
-    width: 100%; 
-    height: auto; 
-    display: block;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
