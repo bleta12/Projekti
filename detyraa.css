@@ -1,14 +1,42 @@
-header{
-    text-align: center;
-
-}
-.box{
+.kryesori{
+  
+    
+    margin: 80px;
     display: flex;
+    width: 90%;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-content: center;
-float: left;}
+    justify-content: space-evenly;
 
-img{
-    width:100%
+
+
 }
+h1{
+    text-align: center;
+    padding: 50px;
+}
+
+.picture 
+{
+    display: flex;
+    width: 250px;
+    height: 200px;
+    margin-bottom: 30px;
+flex-direction: column;
+    }
+  
+.autori{
+    display: flexbox;
+    justify-content: space-between;
+}
+.autori p{
+    margin: 5px 0;
+    font-size: smaller;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+}
+
+  
+
+
+
+

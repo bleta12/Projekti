@@ -5,61 +5,118 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paintings</title>
     <link rel="stylesheet" href="detyraa.css">
-
+    <link rel="stylesheet" href="Header.css">
+    <script>
+        $(function() {
+        $(".toggle").on("click", function() {
+            if ($(".item").hasClass("active")) {
+                $(".item").removeClass("active");
+            } else {
+                $(".item").addClass("active");
+            }
+        });
+    });
+        </script>
 </head>
 <body>
 
-    
-    
-    
     <header>
-        <h1>Various Pictures</h1>
-    </header>
-    
-    <main>
-    
-        <div class="box"><img src="https://assets.vangoghmuseum.nl/5d7ab0e9-ddd8-48f1-89de-675dc7a8a4ca?w=1200&format=webp&
-    c=52a0639b837104c5d32bf8b8f07fadde357c304d58a8827a419a5e63f518330f">
-        <p>"And when I painted landscape in Asnières this summer I saw more colour in it than before."</p>
+        <nav>
+          <ul class="menu">
+              <li class="logo"><img src="sell art.png" alt="Sell Art"></li>
+              <li class="item"><a href="#">Home</a></li>
+              <li class="item"><a href="#">About</a></li>
+              <li class="item"><a href="#">Services</a></li>
+              </li>
+              <li class="item button"><a href="#">Log In</a></li>
+              <li class="item button secondary"><a href="#">Sign Up</a></li>
+              <li class="toggle"><span class="bars"></span></li>
+          </ul>
+      </nav>
+      </header>
+    <body>
+
+        <h1>Various Paintings</h1>
+        <div class="kryesori">
+
+           
+        <div class="picture">
+            <img src="https://arthive.net/res/media/img/orig/article/8ff/7567073@2x.jpg" alt="">
+            <div class="autori">
+                <p>The Last Supper</p>
+                <p>By Leonardo da Vinci</p>
+            </div>
+        </div>
+        <div class="picture">
+            <img src="https://smarthistory.org/wp-content/uploads/2022/01/LastJudgement.jpg"  alt="">
+            <div class="autori">
+                <p>The Last LastJudgement</p>
+                <p>By Michelangelo BuonArroti</p>
+            </div>
+        </div>
+        <div class="picture">
+            <img src="https://www.theartstory.org/images20/new_design/bio_box/bio_box_kahlo_frida.jpg?4" alt="">
+            
+            <div class="autori">
+                <p>Self portrait</p>
+                <p>By Frida Kahlo</p>
+            </div>
+        </div>
+
+        <div class="picture">
+            <img src="https://m.media-amazon.com/images/I/71THjAEoY1L._AC_UF894,1000_QL80_.jpg" alt="">
+            
+            <div class="autori">
+                <p>Starry Night</p>
+                <p>By Van Gogh</p>
+            </div>
+        </div>
+
+        <div class="picture">
+            <img src="https://cdn.shopify.com/s/files/1/0151/5681/files/Mona-Lisa-Leonardo-Da-Vinci_grande.jpg?v=1586356664" alt="">
+            
+            <div class="autori">
+                <p>Mona Lisa</p>
+                <p>By Leonardo Da Vinci</p>
+            </div>
+        </div>
+        <div class="picture">
+            <img src="https://images.saatchiart.com/saatchi/247461/art/3717192/2787076-HSC00001-7.jpg" alt="">
+            
+            <div class="autori">
+                <p>Les Femmes d'Alger </p>
+                <p>By Pablo Picaso</p>
+            </div>
+        </div>
+
+        <div class="picture">
+            <img src="https://i.pinimg.com/564x/f1/96/59/f19659459096834025c4e91226b0f2c3.jpg" alt="">
+            
+            <div class="autori">
+                <p>Seated Lady </p>
+                <p>By Sharan Ranshi</p>
+            </div>
+        </div>
+
+        <div class="picture">
+            <img src="http://www.museumartpaintings.com/pic/Peacock-Paintings-DMP05-8937-10434.jpg" alt="">
+            
+            <div class="autori">
+                <p>Peacock Paintings </p>
+                <p>By anonymous</p>
+            </div>
+        </div>
+
+        <div class="picture">
+            <img src="https://i.pinimg.com/736x/be/13/35/be1335f653cf5137f802e72b95a055fb.jpg" alt="">
+            
+            <div class="autori">
+                <p>Wild Nature </p>
+                <p>By anonymous</p>
+            </div>
+        </div>
     </div>
-    <div class="box"> <img src="https://arthive.net/res/media/img/orig/article/8ff/7567073@2x.jpg" alt="">
-    <p>This wall painting allowed Leonardo to explore how the body communicates inner states of being. </p>
-    </div>
-    <div class="box"> <img src="https://smarthistory.org/wp-content/uploads/2022/01/LastJudgement.jpg" alt="">
-        <p> It is a depiction of the Second Coming of Christ and the final and eternal judgment by God of all humanity.</p>
-    
-    </div>
-    <div class="box"><img src="https://d7hftxdivxxvm.cloudfront.net/?quality=80&resize_to=width&src=https%3A%2F%2Fartsy-media-uploads.s3.
-    amazonaws.
-    com%2FrOrFSqqbcE34sk0yZRTf6A%252FPICASSO%2BFEMMES%2BD%2527ALGER%2B%25C2%25A9%2B2015%2BEstate%2Bof%2BPablo%2BPicasso%2B%2BArtists%2BRights%2B
-    Society%2B%2528ARS%2529%252C%2BNew%2BYork.JPG&width=910">
-        <p>The series, also titled “Les femmes d'Alger,” was created to honor his recently deceased friend (and rival) Henri Matisse</p>
-    
-    </div>
-    <div class="box"><img src="https://www.theartstory.org/images20/new_design/bio_box/bio_box_kahlo_frida.jpg?4">
-    <p>"I paint self-portraits because I am so often alone... because I am the subject I know best."</p>
-    </div>
-    
-    <div class="box"><img src="https://p1.liveauctioneers.com/6247/306441/165045279_1_x.jpg?quality=80&version=1699320922" alt="">
-    <p>
-    
-    </p></div>
-    <div class="box"><img src="https://cdn.shortpixel.ai/spai/q_glossy+w_971+to_webp+ret_img/media.mutualart.com/Images/2022_05/21/21/213644477/
-    f012cbda-955c-4589-ac98-7e69f0330ed3.Jpeg?w=768">
-        <p>It reflects his direct observations of his view of the countryside from his window as well as the memories and emotions this view 
-    evoked in him.</p>
-    
-    </div><div class="box"><img src="https://cdn.shopify.com/s/files/1/0151/5681/files/Artist-Vincent-Van-Gogh-Sunflowers_grande.jpg?
-    v=1586356531">
-        <p> The plant represents the different stages of life; although it shines brightly when the sun is at its zenith, it is no less 
-    inspiring when it silently disintegrates.</p>
-    </div>
-    <div class="box"><img src="https://cdn.shopify.com/s/files/1/0151/5681/files/Mona-Lisa-Leonardo-Da-Vinci_grande.jpg?v=1586356664">
-        <p>Mona Lisa reflects Leonardo's idea of the cosmic link connecting humanity and nature</p>
-    
-    </div>
-    </main>
-</body>
+    </body>
 </html>
 
     
