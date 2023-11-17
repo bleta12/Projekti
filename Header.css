@@ -56,8 +56,6 @@
   .item.active {
     display: block;
   }
-  
-  /* Navbar Toggle */
   .toggle {
     cursor:pointer;
   }
@@ -127,8 +125,6 @@
         color: #ddd;
     } 
   }
-  
-  /* Desktop menu */
   @media all and (min-width: 768px) {
     .item {
         display: block;
