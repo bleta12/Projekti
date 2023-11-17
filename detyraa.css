@@ -13,15 +13,21 @@
 h1{
     text-align: center;
     padding: 50px;
+    color: transparent;
+    text-transform: uppercase;
+     -webkit-text-stroke:2px  black ;
+       
 }
 
 .picture 
 {
     display: flex;
-    width: 250px;
-    height: 200px;
+    width: 355px;
+    height: 380px;
     margin-bottom: 30px;
 flex-direction: column;
+
+
     }
   
 .autori{
@@ -35,7 +41,51 @@ flex-direction: column;
     font-style: italic;
 }
 
-  
+.picture{
+    border-style:outset;
+    border-width: 3px;
+    border-color: black;
+    border-radius: 10px;
+    padding: 5px;
+  justify-content: center;
+  background-color:#F4F6F6 ;
+ 
+
+}
+
+.picture img{
+    width: 320px;
+    height:300px;
+    object-fit: cover;
+}
+
+p{
+    color: black;
+    font-style: inherit;
+-webkit-text-stroke:1px  black ;
+
+    text-align: right;
+    color: transparent;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
