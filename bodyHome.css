@@ -15,10 +15,12 @@
     margin-top: 80px;
     display: flex;
     flex-direction: column;
-    height: 500px;
+    height: 600px;
     position: relative;
     width: 50%;
     text-align: center;
+    background-color: rgb(223, 223, 222);
+    
 }
 .titulli{
     font-size: xx-large;
@@ -40,6 +42,8 @@
 }
 .bllok img{
     width: 100%;
+    flex-wrap:wrap-reverse;
+    
 }
 .paragrafi-figures{
     position: absolute;
@@ -58,4 +62,44 @@
 }
 .bllok:hover .paragrafi-figures {
     opacity: 1;
+  }
+
+
+
+.titulli2{
+    margin-top: 70px;
+    margin-bottom: 20px;
+    margin-left: 70px;
+    margin-right: 70px;
+    padding: 15px;
+    font-size: xx-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(229, 232, 232);
+}
+
+.popularPost{
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+    
+}
+.rubrika{
+    
+        display: flex;
+        flex-direction: column;
+        height: 400px;
+        width: 250px;
+        margin-bottom: 30px;
+        margin-left: 70px;
+        
+}
+
+  .card {
+    box-shadow: 9px 4px 10px 1px rgba(0, 0, 0, 0.2);
+  }
+ 
+  .title {
+    color: grey;
   }
