@@ -15,11 +15,10 @@
     margin-top: 80px;
     display: flex;
     flex-direction: column;
-    height: 600px;
+    height: inherit;
     position: relative;
     width: 50%;
     text-align: center;
-    background-color: rgb(223, 223, 222);
     
 }
 .titulli{
@@ -78,7 +77,7 @@
 }
 
 .popularPost{
-    width: 90%;
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -86,13 +85,12 @@
     
 }
 .rubrika{
-    
+        justify-content: space-around;
         display: flex;
         flex-direction: column;
-        height: 400px;
+        height: 260px;
         width: 250px;
-        margin-bottom: 30px;
-        margin-left: 70px;
+        margin-bottom: 20px;
         
 }
 

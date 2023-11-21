@@ -8,7 +8,7 @@
     font-family: sans-serif;
   }
   nav {
-    background: #353737;
+    background: #abadad;
     padding: 5px 20px;
     border-style: ridge;
   }
@@ -119,7 +119,7 @@
         transition:all .25s;
     }
     .button:not(.secondary) a:hover {
-        background: #060707;
+        background: #798383;
         border-color:black;
     }
     .button.secondary a:hover {
