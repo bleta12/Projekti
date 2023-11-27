@@ -6,10 +6,13 @@
     width: 90%;
     flex-wrap: wrap;
     justify-content: space-evenly;
-
+    
+    
 
 
 }
+
+
 h1{
     text-align: center;
     padding: 50px;
@@ -54,10 +57,14 @@ flex-direction: column;
 }
 
 .picture img{
-    width: 320px;
-    height:300px;
+    width: 330px;
+    height:320px;
     object-fit: cover;
+margin-left: 5px;  
+margin-right: 8px;  
+margin-top: 8px;
 }
+
 
 p{
     color: black;
@@ -68,6 +75,11 @@ p{
     color: transparent;
 
 }
+
+
+
+
+
 
 
 
