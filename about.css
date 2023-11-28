@@ -1,0 +1,233 @@
+
+.bgfoto{
+  margin-top: 45px;
+    width: 1000px;
+    height: 350px;
+    background-image: url("son.png");
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 18%;
+    
+}
+
+.bgfoto h1{
+    text-align: center;
+    margin-top: -100px;
+    font-size: 35px;
+}
+
+.tx h1{
+  margin-top: 80px;
+    text-align: center;
+    margin-bottom: 200px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+           
+}
+
+
+.Arts{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+    
+    
+}
+.post{
+        justify-content: space-around;
+        display: flex;
+        flex-direction: column;
+        height: 260px;
+        width: 300px;
+        margin-bottom: 100px;
+        
+}
+
+  .card {
+    box-sizing: border-box;
+    box-shadow: 0 0 10px black;
+  }
+ 
+  .title {
+    color: grey;
+  }
+
+
+
+  .Faqja{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  
+    
+    
+}
+.More{
+        justify-content: space-around;
+        display: flex;
+        flex-direction: column;
+        height: 800px;
+        width: 650px;
+        margin-bottom: 200px;
+        box-shadow:0 0 20px black; 
+        margin-top: 100px;
+        margin-left: 500px;
+            
+border: double;
+        
+}
+
+
+.More p {
+  text-align: center;
+  margin-bottom: 100px;
+  font-size: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+.More h2{
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding: 50px;
+color: transparent;
+text-transform: uppercase;
+ -webkit-text-stroke:2px  black ;
+   
+}
+
+.container p{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.card img{
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
