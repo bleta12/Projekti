@@ -111,6 +111,19 @@ text-transform: uppercase;
 }
 
 
+.Faqja img{
+  width: 50%;
+  height: 50%;
+  display: flex;
+
+}
+
+.Container{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
 
 
 
