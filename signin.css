@@ -1,22 +1,24 @@
-*{
-    padding: 0;
-    margin: 0;
-    font-family: sans-serif;
-    box-sizing: border-box;
-}
+
 body{
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    min-height: 100vh;
-    margin-right:400px;
+    display: flexbox;
     background: lightgray;
 }
+.b{
+    display: flex;
+    margin-left: 15%;
+    flex-wrap: wrap;
+    
+}
 .form{
+    display: flexbox;
+    flex-wrap: wrap;
+    margin-top: 10%;
+    margin-bottom: 10%;
     width:450px;
-background: white;
-color: solid black;
-padding: 30px 45px;
+    margin-left: 0%;
+   background: white;
+   color: solid black;
+   padding: 30px 45px;
 
 }
 
@@ -102,6 +104,13 @@ padding: 30px 45px;
 }
 .register-link p a:hover{
     text-decoration: underline;
+}
+.TXT{
+    margin-top: 20%;
+    display: flexbox;
+    margin-bottom: 10%;
+    width: 50%;
+    flex-wrap: wrap;
 }
 
 .TXT h2{
