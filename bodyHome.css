@@ -1,4 +1,4 @@
-   main{
+main{
     display: flex;
      flex-direction: column;
     justify-content: center;
@@ -19,6 +19,7 @@
     position: relative;
     width: 50%;
     text-align: center;
+
     
 }
 .titulli{
@@ -85,12 +86,14 @@
     
 }
 .rubrika{
+
         justify-content: space-around;
         display: flex;
         flex-direction: column;
         height: 260px;
         width: 250px;
         margin-bottom: 100px;
+        margin-top: 25px;
         
 }
 
