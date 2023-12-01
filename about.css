@@ -8,7 +8,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 18%;
+    margin-left: 13%;
+    margin-top:10%;
     
 }
 
@@ -32,7 +33,7 @@
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    margin-bottom: 100px;
+    margin-bottom: 10%;
     
     
 }
@@ -43,7 +44,6 @@
         height: 260px;
         width: 300px;
         margin-bottom: 100px;
-        
 }
 
   .card {
@@ -70,16 +70,15 @@
         justify-content: space-around;
         display: flex;
         flex-direction: column;
-        height: 800px;
-        width: 650px;
+        height: 100%;
+        width: 100%;
         margin-bottom: 200px;
         box-shadow:0 0 20px black; 
         margin-top: 100px;
         margin-left: 500px;
-            
-border: double;
-        
-}
+         border: double;
+        margin-right: 15%;
+}          
 
 
 .More p {
@@ -111,20 +110,21 @@ text-transform: uppercase;
 }
 
 
-.Faqja img{
-  width: 50%;
-  height: 50%;
-  display: flex;
 
+.shm{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 15%;
+  
 }
 
-.Container{
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
+.quotes  img{
+  width: 120%;
+  height: 65%;
+  margin-left: 55%;
+  margin-top: 65%;
 }
-
 
 
 

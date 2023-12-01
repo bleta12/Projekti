@@ -7,6 +7,7 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="signin.css">
     <link rel="stylesheet" href="foter.css">
+    
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
@@ -22,21 +23,27 @@
     </div>
 
     <div class="form">
-        <form action="">
+        
+
+            <form action="" onsubmit="return" validateForm></form>
             <h1>Log in</h1>
+
             <div class="input-box">
-                <input type="text" placeholder="username" required>
+
+                <label>Username</label>
+                <input type="text" id="userid" size="8" required />
                 <i class='bx bxs-user'></i>
-            </div>
-            <div class="input-box">
-                <input type="password" placeholder="password" required>
+           
+            
+                <label>Password</label>
+                  <input type="text" id="password" size="16" required />
                 <i class='bx bxs-lock-alt' ></i>
-            </div>
-            <div class="remember-forget">
-                <label><input type="checkbox">Remember me </label>
+            
+             <label>remember-forget</label>
+             <input type="text" id="remember-forget"  required />
                 <a href="#">Forgot password?</a>
-            </div>
-                <button type="submit" class="btn">Login</button>
+                 
+                 <input type="submit" value="Submit"  id="submit-btn" required/>
             
             <div class="register-link">
                 <p>Don't have an account?<a href="#"> Register</a></p>
@@ -91,6 +98,6 @@
 </div>
 <hr>
 <p class="copyright">All rights reserved by &copy;Sell Art 2023</p>
-
+ <script src="footer.js"></script>
 </footer>
 </html>
