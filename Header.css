@@ -35,6 +35,7 @@
   }
   img{
     width: 150px;
+    height: auto;
   }
   .menu {
     display: flex;
