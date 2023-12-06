@@ -25,7 +25,7 @@
   .card{
     background-color: antiquewhite;
     width: 400px;
-    height: 600px;
+    height: 620px;
     margin: 10px;
     justify-content: space-around;
     
@@ -33,10 +33,24 @@
   }
 
   .card-img{
-    background-color: aqua;
-    height: 250px;
+    height: 330px;
     margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0 ;
   }
   .car-1{
-    background-image: url('\MonaLisa.jpg');
+    background-image: url('\Leonardo.webp');
   }
+
+  .car-2{
+    background-image: url('\Georgia.jpg');
+  }
+
+  .car-3{
+    background-image: url('\VanGogh.webp');
+  }
+
+  .car-4{
+    background-image: url('\VanGogh.webp');
+  }
+  .card p}
