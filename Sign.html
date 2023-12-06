@@ -15,6 +15,23 @@
 
 
 <body>
+    <script>
+        function validateForm(){
+        var username=document.getElementById("userid").value;
+        var Password=document.getElementById("password").value;
+        
+        
+        var UsernameRegex=/^[a-zA-Z\s]+$/;
+        if (!username.test(username)){
+            alert("Please enter a valid name.");
+            return false;
+        }
+        if(Password.length <6){
+            alert("Password must be at least 6 characters")
+        }
+    }
+    </script>
+        
     
     <div class="b">
     <div class="TXT">
@@ -28,7 +45,7 @@
             <form action="" onsubmit="return" validateForm></form>
             <h1>Log in</h1>
 
-            <div class="input-box">
+          
 
                 <label>Username</label>
                 <input type="text" id="userid" size="8" required />
