@@ -16,30 +16,81 @@
 <body>
     <script>
         function validateForm(){
-        var username=document.getElementById("userid").value;
-        var Password=document.getElementById("password").value;
+        const username = document.getElementById('username');
+            const password = document.getElementById('password');
         
         
-        var UsernameRegex=/^[a-zA-Z\s]+$/;
-        if (!username.test(username)){
-            alert("Please enter a valid name.");
-            return false;
-        }
-        if(Password.length <6){
-            alert("Password must be at least 6 characters")
-        }
+        if (!validateusername(username.value)) {
+        alert('Please enter a valid USERNAME .');
+        return;
     }
+     if (!validatePassword(password.value)) {
+        alert('Please enter a valid password.');
+        return;
+    }
+    alert('Login successful!');
+
+    
+    }
+    function validateusername(username) {
+    
+    const usernameRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    return usernameRegex.test(username);
+} 
+function validatePassword(password) {
+   
+    const minLength = 8;
+    const hasUpperCase = /[A-Z]/.test(password);
+    const hasLowerCase = /[a-z]/.test(password);
+    const hasNumber = /\d/.test(password);
+
+    return (
+        password.length >= minLength &&
+        hasUpperCase &&
+        hasLowerCase &&
+        hasNumber
+    );
+}
+function validateForm(event) {
+    event.preventDefault();
+
+    const username = document.getElementById('username');
+    const password = document.getElementById('password');
+    const errorMessages = document.getElementById('errorMessages');
+
+    errorMessages.innerHTML = '';
+
+    if (!validateEmail(email.value)) {
+        errorMessages.innerHTML += '<p>Please enter a valid email address.</p>';
+        return;
+    }
+
+    if (!validatePassword(password.value)) {
+        errorMessages.innerHTML += '<p>Please enter a valid password.</p>';
+        return;
+    }
+
+    alert('Login successful!');
+}    
+        
+
+    
+    
+    
+    
     </script>
         
     
     <div class="b">
     <div class="TXT">
+        
         <h2>SELL ART </h2>
         <p>Connect to see the greatest paintings of all the time</p>
     </div>
 
     <div class="form">
         <form action="">
+            <form action="" onsubmit="return" validateForm>
             <h1>Log in</h1>
             <div class="input-box">
                 <input type="text" placeholder="username" required>
@@ -59,6 +110,7 @@
                 <p>Don't have an account?<a href="#"> Register</a></p>
             </div>
         </form>
+    </form>
     </div>
 </div>
 </body>

@@ -25,74 +25,36 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
            
 }
-
-
-.Arts{
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    margin-bottom: 100px;
-    
-    
+.Faqja{
+  background-color: lightgrey;
+  display: flex;
+justify-content: space-between;
+padding: 40px;
+width: 70%;
+margin: 10rem  auto 0  auto;
 }
-.post{
-        justify-content: space-around;
-        display: flex;
-        flex-direction: column;
-        height: 260px;
-        width: 300px;
-        margin-bottom: 100px;
-        
-}
-
-  .card {
-    box-sizing: border-box;
-    box-shadow: 0 0 10px black;
-  }
- 
-  .title {
-    color: grey;
-  }
-
-
-
-  .Faqja{
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+.Faqja img{
+  justify-content: center;
+ margin-left: 250px;
+ margin-bottom: 250px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  height: 50%;
   
-    
-    
 }
-.More{
-        justify-content: space-around;
-        display: flex;
-        flex-direction: column;
-        height: 800px;
-        width: 650px;
-        margin-bottom: 200px;
-        box-shadow:0 0 20px black; 
-        margin-top: 100px;
-        margin-left: 500px;
-            
-border: double;
-        
-}
-
-
 .More p {
   text-align: center;
   margin-bottom: 100px;
   font-size: 20px;
   margin-left: 10px;
-  margin-right: 10px;
+  margin-right: 15px;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 
 .More h2{
+  margin: 0;
   text-align: center;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   padding: 50px;
@@ -102,28 +64,14 @@ text-transform: uppercase;
    
 }
 
-.container p{
-  font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-.card img{
-  width: 100%;
-}
+.main
 
 
-.Faqja img{
-  width: 50%;
-  height: 50%;
-  display: flex;
 
-}
 
-.Container{
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-}
+
+
+
 
 
 
