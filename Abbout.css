@@ -1,0 +1,42 @@
+
+
+
+
+
+
+
+
+
+  *{
+   
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+  }
+  .main{
+    display:flex;
+    justify-content: center;
+    margin-bottom: 12%;
+  }
+  
+  
+  
+  .card{
+    background-color: antiquewhite;
+    width: 400px;
+    height: 600px;
+    margin: 10px;
+    justify-content: space-around;
+    
+    
+  }
+
+  .card-img{
+    background-color: aqua;
+    height: 250px;
+    margin-bottom: 15px;
+  }
+  .car-1{
+    background-image: url('\MonaLisa.jpg');
+  }
