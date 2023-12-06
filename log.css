@@ -1,9 +1,0 @@
-body{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.form{
-    display: flexbox;
-    width: 10%;
-}
