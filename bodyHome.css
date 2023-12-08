@@ -19,6 +19,7 @@ main{
     position: relative;
     width: 50%;
     text-align: center;
+    flex-wrap: wrap;
 
     
 }
@@ -42,7 +43,7 @@ main{
 }
 .bllok img{
     width: 100%;
-    flex-wrap:wrap-reverse;
+    flex-wrap:wrap;
     
 }
 .paragrafi-figures{
