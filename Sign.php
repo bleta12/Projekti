@@ -16,6 +16,7 @@
 <body>
     <script>
         function validateForm(){
+            
         const username = document.getElementById('username');
             const password = document.getElementById('password');
         
@@ -51,7 +52,7 @@ function validatePassword(password) {
         hasNumber
     );
 }
-function validateForm(event) {
+function validateForm1(event) {
     event.preventDefault();
 
     const username = document.getElementById('username');
@@ -60,8 +61,8 @@ function validateForm(event) {
 
     errorMessages.innerHTML = '';
 
-    if (!validateEmail(email.value)) {
-        errorMessages.innerHTML += '<p>Please enter a valid email address.</p>';
+    if (!validateUsername(username.value)) {
+        errorMessages.innerHTML += '<p>Please enter a valid username .</p>';
         return;
     }
 
@@ -90,27 +91,25 @@ function validateForm(event) {
 
     <div class="form">
         <form action="">
-            <form action="" onsubmit="return" validateForm>
             <h1>Log in</h1>
             <div class="input-box">
-                <input type="text" placeholder="username" required>
+                <input type="text" id='username' placeholder="username" >
                 <i class='bx bxs-user'></i>
             </div>
             <div class="input-box">
-                <input type="password" placeholder="password" required>
+                <input type="password" id='password' placeholder="password" >
                 <i class='bx bxs-lock-alt' ></i>
             </div>
             <div class="remember-forget">
                 <label><input type="checkbox">Remember me </label>
                 <a href="#">Forgot password?</a>
             </div>
-                <button type="submit" class="btn">Login</button>
+                <button type="submit" class="btn" onclick="validateForm()">Login</button>
             
             <div class="register-link">
                 <p>Don't have an account?<a href="#"> Register</a></p>
             </div>
         </form>
-    </form>
     </div>
 </div>
 </body>
