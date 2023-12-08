@@ -39,7 +39,7 @@ crossorigin="anonymous"></script>
               
 
               </li>
-              <li class="item button"><a href="Sign.html">Log In</a></li>
+              <li class="item button"><a href="Sign.php">Log In</a></li>
               <li class="item button secondary"><a href="#">Sign Up</a></li>
               <li class="toggle"><span class="bars"></span></li>
           </ul>
