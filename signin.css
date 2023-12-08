@@ -1,7 +1,7 @@
 
 body{
     display: flexbox;
-    background: lightgray;
+    background: aliceblue;
 }
 .b{
     display: flex;
@@ -19,7 +19,7 @@ body{
    background: white;
    color: solid black;
    padding: 30px 45px;
-
+   box-shadow: 0 0 20px black;
 }
 
 .form h1{
