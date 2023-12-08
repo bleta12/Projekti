@@ -94,18 +94,7 @@ body button:hover {
     padding-left: 20px;
     padding-right: 20px;
   }
-  
-  .section-header {
-    margin-bottom: 50px;
-    text-align: center;
-  }
-  
-  .section-header h2 {
-    color: #FFF;
-    font-weight: bold;
-    font-size: 3em;
-    margin-bottom: 20px;
-  }
+
   
   .row  {
     display: flex;
