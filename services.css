@@ -1,8 +1,12 @@
+body{
+  background-color: aliceblue;
+}
 .blloqet{
     width: 100%;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    background-color:rgb(210, 239, 239);
     
 }
 .section{
@@ -15,7 +19,7 @@
     margin-top: 25px;
     border-radius: 10px;
     text-align: center;
-    background-color:rgb(93, 204, 204);
+    
 }
 .titulliServices{
     font-family:Georgia, 'Times New Roman', Times, serif;
@@ -23,6 +27,7 @@
     text-align: center;
     margin-top: 30px;
     margin-bottom: 30px;
+    background-image:url(titulli.jpg);
 }
 .fotoS{
     display: flex;
@@ -94,6 +99,7 @@ body button:hover {
     padding-left: 20px;
     padding-right: 20px;
   }
+
   
   .row  {
     display: flex;
