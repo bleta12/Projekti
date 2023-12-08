@@ -44,7 +44,6 @@
     font-size: 16px;
     margin-bottom: 15px;
 }
-
 .buttonS {
     background-color: rgb(244, 97, 60);
     border: none;
@@ -58,6 +57,8 @@
     display: inline-block;
     margin: 4px 2px;
     transition-duration: 0.4s;
+    width: 40%;
+    
 }
 
 body button:hover {
