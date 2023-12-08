@@ -33,6 +33,21 @@
     
 
 
+        <script>
+            function toggleReadMore(cardNumber) {
+                var extraText = document.getElementById("extraText" + cardNumber);
+                var btnText = document.getElementById("readMoreBtn" + cardNumber);
+            
+                if (extraText.style.display === "none" || extraText.style.display === "") {
+                    extraText.style.display = "block";
+                    btnText.innerHTML = "READ LESS";
+                } else {
+                    extraText.style.display = "none";
+                    btnText.innerHTML = "READ MORE";
+                }
+            }
+            </script>
+            
 
 
 
@@ -53,41 +68,88 @@
 
 
 
-
+<body>
         <div class="tx">
+            
             <h1>Artists who made the world of art complete</h1>
+          
         </div>
-      
+   
            
         
-           <section class="main">
-              <div class="card">
-               
-                <div class="card-img car-1"></div>
-                  <h1>Leonardo Da Vinci</h1>
-                      <p>Leonardo Vinci was an Italian polymath of the High Renaissance who was active as a painter, engineer, scientist, and architect.Leonardo is identified as one of the greatest painters in the history of art and is often credited as the founder of the High Renaissance.While his fame initially rested on his achievements as a painter, he also became known for his notebooks</p>
-                      <a href="">READ MORE</a>
-                      </div>
-                      <div class="card">
-  
-                        <div class="card-img  car-2"></div>
-                          <h1>Georgia</h1>
-                              <p>Georgia Totto O'Keeffe  was an American modernist painter. Called the "Mother of American modernism", O'Keeffe gained international recognition for her meticulous paintings of natural forms, particularly flowers and desert-inspired landscapes, which were often drawn from and related to places and environments in which she lived.</p>
-                              <a href="https://www.portraitflip.com/blog/history-of-painting/">READ MORE</a>
-                        </div>
-              
-              
-                              <div class="card">
-  
-                                <div class="card-img  car-3"></div>
-                                  <h1>Michelangelo</h1>
-                                      <p>Michelangelo di Lodovico, was an Italian painter, architect, and poet of the High Renaissance.His work was inspired by models from classical antiquity and had a lasting influence on Western art. Michelangelo's creative abilities and mastery in a range of artistic arenas define him as an archetypal Renaissance man, along with his rival  Leonardo da Vinci. </p>
-                                      <a href="">READ MORE</a>
-                                      </div>
-                            </section
+          
+        <section class="main">
+            <div class="card">
+                <div id="container">
+                    <div class="card-img car-1"></div>
+                    <h1>Leonardo Da Vinci</h1>
+                    <p> Leonardo da Vinci was born in Italy.<br>He began his career in the city, but then spent much time in the service of Ludovico Sforza in Milan,he spent his last three years in France, where he died in 1519.
+                    </p>
+                    <div id="extraText1" class="hidden">
+                        <h1> Paintings</h1> 
+                        <p>Despite the recent awareness and admiration of Leonardo as a scientist and inventor, for the better part of four hundred years his fame rested on his achievements as a painter. These paintings are famous for a variety of qualities that have been much imitated by students and discussed at great length by connoisseurs and critics. By the 1490s Leonardo had already been described as a "Divine" painter</p>
+                    </div>
+                    <a href="javascript:void(0)" id="readMoreBtn1" onclick="toggleReadMore(1)">READ MORE</a>
+                </div>
+            </div>
         
+            <div class="card">
+                <div class="card-img  car-2"></div>
+                <h1>Georgia</h1>
+                <p>Georgia Totto O'Keeffe  was an American modernist painter. Called the "Mother of American modernism", 
+                O'Keeffe gained international recognition for her meticulous paintings of natural forms, particularly flowers 
+                and desert-inspired landscapes, which were often drawn from and related to places and environments in which 
+                she lived.</p>
+                <div id="extraText2" class="hidden">
+                    <p>This is additional text for Georgia. You can add more details or information here.</p>
+                </div>
+                <a href="javascript:void(0)" id="readMoreBtn2" onclick="toggleReadMore(2)">READ MORE</a>
+            </div>
+        
+            <div class="card">
+                <div class="card-img  car-3"></div>
+                <h1>Michelangelo</h1>
+                <p>Michelangelo di Lodovico, was an Italian painter, architect, and poet of the High Renaissance. His 
+                work was inspired by models from classical antiquity and had a lasting influence on Western art. 
+                Michelangelo's creative abilities and mastery in a range of artistic arenas define him as an 
+                archetypal Renaissance man, along with his rival  Leonardo da Vinci.</p>
+                <div id="extraText3" class="hidden">
+                    <p>This is additional text for Michelangelo. You can add more details or information here.</p>
+                </div>
+                <a href="javascript:void(0)" id="readMoreBtn3" onclick="toggleReadMore(3)">READ MORE</a>
+            </div>
+        </section>
+        
+          
 
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
   
+          
+          
+          
+          
+          
+          
+          
+          
+  
+          
+          
+          
+          
+          
+          
+        
+                        </body>  
   
                 <body>
          <footer class="footer">
