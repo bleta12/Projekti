@@ -25,16 +25,23 @@
     nameError.innerHTML = "";
     passwordError.innerHTML = "";
 
-    if (name === "") {
-        nameError.innerHTML = "Name is required.";
+    var nameRegex = /^(?=.*[a-zA-Z])(?=.*[0-9])[a-zA-Z0-9]{3,}$/;
+
+    if (!nameRegex.test(name)) {
+        nameError.innerHTML = "Invalid username. Use at least 3 characters, letters, and numbers.";
         return false;
     }
-    if (password.length < 8) {
-        passwordError.innerHTML = "Password must be at least 8 characters.";
+    
+    var passwordRegex = /^(?=.*[a-zA-Z])(?=.*[0-9]).{8,}$/;
+    if (!passwordRegex.test(password)) {
+        passwordError.innerHTML = "Invalid password. Use at least 8 characters with letters and numbers.";
         return false;
     }
+
+    
     alert("Form submitted successfully!");
     return true;
+    
 }
     
     
@@ -43,7 +50,6 @@
 </script>
 
 
-  <!-- jjj-->
     
     
 

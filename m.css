@@ -23,7 +23,7 @@ body{
     margin-top: 30px;
 }
 .Fotot,
-.contentRight{
+.Permbajtja{
     width: 100%;
 }
 .Fotot .teHistori{
@@ -56,35 +56,35 @@ body{
 .Fotot .teHistori .imgWrapper:nth-child(even){
     transform: translateY(20px);
 }
-.contentRight .content{
+.Permbajtja .SA{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 15px;
 }
-.contentRight .content h4{
+.Permbajtja .SA h4{
     font-size: 22px;
     font-weight: 400;
-    color: #d35400;
+    color: #024040;
 }
-.contentRight .content h2{
+.Permbajtja .SA h2{
     font-size: 40px;
     color: #1e272e;
 }
-.contentRight .content p{
+.Permbajtja .SA p{
     font-size: 16px;
     color: #343434;
     line-height: 28px;
     padding-bottom: 10px;
 }
-.contentRight .content a{
+.Permbajtja .SA a{
     display: inline-block;
     text-decoration: none;
     font-size: 16px;
     letter-spacing: 1px;
     padding: 13px 30px;
     color: #fff;
-    background: #d35400;
+    background: #024040;
     border-radius: 8px;
     user-select: none;
 }
@@ -98,10 +98,10 @@ body{
     .Fotot .teHistori .imgWrapper{
         height: 150px;
     }
-    .contentRight .content h4{
+    .Permbajtja .SA h4{
         font-size: 18px;
     }
-    .contentRight .content h2{
+    .Permbajtja .SA h2{
         font-size: 30px;
     }
 }
