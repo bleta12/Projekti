@@ -29,12 +29,15 @@
 
     if (!nameRegex.test(name)) {
         nameError.innerHTML = "Invalid username. Use at least 3 characters, letters, and numbers.";
+        nameError.style.color = "red";
         return false;
     }
     
     var passwordRegex = /^(?=.*[a-zA-Z])(?=.*[0-9]).{8,}$/;
     if (!passwordRegex.test(password)) {
         passwordError.innerHTML = "Invalid password. Use at least 8 characters with letters and numbers.";
+        passwordError.style.color = "red";
+
         return false;
     }
 
