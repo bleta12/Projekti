@@ -22,6 +22,31 @@
             }
         });
     });
+  function validateForm() {
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+
+
+    var nameError = document.getElementById("nameError");
+    var emailError = document.getElementById("emailError");
+
+    nameError.innerHTML = "";
+    emailError.innerHTML = "";
+
+    if (name === "") {
+      nameError.innerHTML = "Name is required.";
+      return false;
+    }
+
+    var emailPattern = /^([A-Za-z0-9_\-.])+@([A-Za-z0-9_\-.])+\.([A-Za-z]{2,4})$/;
+    if (!emailPattern.test(email)) {
+      emailError.innerHTML = "Invalid email address.";
+      return false;
+    }
+
+    alert("Form submitted successfully!");
+    return true;
+  }
         </script>
 </head>
     <header>
@@ -35,7 +60,7 @@
               
               </li>
               <li class="item button"><a href="Sign.html">Log In</a></li>
-              <li class="item button secondary"><a href="#">Sign Up</a></li>
+              <li class="item button secondary"><a href="SignUp.html">Sign Up</a></li>
               <li class="toggle"><span class="bars"></span></li>
           </ul>
       </nav>
@@ -137,18 +162,20 @@
       </div>
 
       <div class="contact-form">
-        <form action="" id="contact-form">
+        <form action="" id="registrationForm" onsubmit="return validateForm()">
           <h2>Send Message</h2>
           <div class="input-box">
-            <input type="text" required="true" name="" placeholder="Full Name">
+            <input type="text" required="true" name="name"id="name" placeholder="Full Name">
+            <span id="nameError" class="error"></span>
           </div>
           
           <div class="input-box">
-            <input type="email" required="true" name="" placeholder="Email">
+            <input type="email" required="true" name="email" id="email" placeholder="Email">
+            <span id="emailError" class="error"></span>
           </div>
           
           <div class="input-box">
-            <textarea required="true" name="" placeholder="Type your Message..."></textarea>
+            <textarea required="true" name="textarea" placeholder="Type your Message..."></textarea>
           </div>
           
           <div class="input-box">
@@ -158,7 +185,6 @@
       </div>
     </div>
  </div>
-
 <footer class="footer">
     <div class="kryesor">
         <div class="rreshti">
