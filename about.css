@@ -1,15 +1,14 @@
 
 .bgfoto{
-  margin-top: 45px;
-    width: 1000px;
-    height: 350px;
+  margin-top: 155px;
+    width: 90%;
+    height: 400px;
     background-image: url("son.png");
     background-size: 100% 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 18%;
-    
+    margin-left: 80px;
 }
 
 .bgfoto h1{
@@ -30,6 +29,18 @@ height: 100%;
 margin: 10rem  auto 0  auto;
 margin-right: 150px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
