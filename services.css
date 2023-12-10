@@ -13,12 +13,13 @@ body{
     justify-content: space-around;
     display: flex;
     flex-direction: column;
-    height: 400px;
+    height: 480px;
     width: 350px;
     margin-bottom: 100px;
     margin-top: 25px;
     border-radius: 10px;
     text-align: center;
+  
     
 }
 .titulliServices{
