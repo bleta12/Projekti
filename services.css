@@ -51,7 +51,7 @@ body{
     font-size: 16px;
     margin-bottom: 15px;
 }
-.buttonS {
+.readMoreBtn {
     background-color: rgb(244, 97, 60);
     border: none;
     border-radius: 5px;
@@ -67,8 +67,12 @@ body{
     width: 40%;
     
 }
+.section a{
+  text-decoration: none;
+  margin-left: 100px;
+}
 
-body button:hover {
+.readMoreBtn:hover {
     background-color: rgb(247, 41, 41);
     color: white;
 }
