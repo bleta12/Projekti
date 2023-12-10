@@ -11,12 +11,27 @@
     <link rel="stylesheet" href="foter.css">
     <link rel="stylesheet" href="Abbout.css">
     <link rel="stylesheet" href="m.css">
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+    crossorigin="anonymous"></script>
+    <script>
+        $(function() {
+        $(".toggle").on("click", function() {
+            if ($(".item").hasClass("active")) {
+                $(".item").removeClass("active");
+            } else {
+                $(".item").addClass("active");
+            }
+        });
+    });
+        </script>
 
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
 </head>
-
-    <header>
+    <header style="width: 100%;">
         <nav>
             <ul class="menu">
                 <li class="logo"><img src="sell art.png" alt="Sell Art"></li>
@@ -147,7 +162,7 @@
 
 
 
-    <footer class="footer">
+    <footer class="footer" style="width: 100%;">
         <div class="kryesor">
             <div class="rreshti">
                 <div class="kolon">
