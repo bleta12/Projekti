@@ -53,7 +53,7 @@
       </script>
     
     <div class="contact-form">
-        <form action="Sign.html" id="registrationForm" onsubmit="return validateForm()">
+        <form action="Sign.php" id="registrationForm" onsubmit="return validateForm()" method="POST">
           <h2>Sign Up</h2>
           <div class="input-box">
             <input type="text" required="true" name="name" id="name" placeholder="Full name">

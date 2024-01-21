@@ -60,7 +60,7 @@
     </div>
 
     <div class="form">
-        <form action=""id="registrationForm" onsubmit="return validateForm()">
+        <form action="Header.php"id="registrationForm" onsubmit="return validateForm()" method="POST">
             <h1>Log in</h1>
             <div class="input-box">
                 <input type="text" id="username" placeholder="username" size="8" required>
