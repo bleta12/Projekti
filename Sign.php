@@ -63,7 +63,7 @@
         <form action="Header.php"id="registrationForm" onsubmit="return validateForm()" method="POST">
             <h1>Log in</h1>
             <div class="input-box">
-                <input type="text" id="username" placeholder="username" size="8" required>
+                <input type="text" id="username" placeholder="username" name="username" size="8" required>
                 <i class='bx bxs-user'></i>
                 <span id="nameError" class="error" style="color: red;"></span>
             </div>
@@ -76,7 +76,7 @@
                 <label><input type="checkbox">Remember me </label>
                 <a href="#">Forgot password?</a>
             </div>
-                <button type="submit" class="btn">Login</button>
+                <button type="submit" name="submit" class="btn">Login</button>
             
             <div class="register-link">
                 <p>Don't have an account?<a href="SignUp.html"> Register</a></p>

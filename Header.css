@@ -151,6 +151,15 @@
     }
   }
 
+  .cookie-container {
+    background-color: #ffeecc;
+    border: 2px solid #e0bb71;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
 
 
 
