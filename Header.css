@@ -85,7 +85,7 @@
   .bars:after {
     top: -5px;
   }
-  @media all and (min-width: 468px) {
+  @media all and (min-width: 478px) {
     .menu {
         justify-content: center;
     }
@@ -126,7 +126,7 @@
         color: #ddd;
     } 
   }
-  @media all and (min-width: 768px) {
+  @media all and (min-width: 845px) {
     .item {
         display: block;
         width: auto;
