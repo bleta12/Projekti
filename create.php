@@ -5,8 +5,8 @@
   $database="paintings";
 
  $connection= new mysqli($servername,$username,$password,$database);
+ 
 
-  
   $piktura="";
   $emri="";
   $autori="";
@@ -29,13 +29,13 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
     }
 
     $sql="INSERT INTO piktura(piktura,emri,autori,cmimi)"."VALUES ('$piktura','$emri','$autori','$cmimi')";
+
     $result=$connection->query($sql);
 
     if(!$result){
         $errorMesazh= "Invalid query: ". $connection->connect_error;
         break;
     }
-
 
     $piktura="";
     $emri="";

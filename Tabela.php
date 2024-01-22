@@ -22,35 +22,29 @@
             </thead>
             <tbody>
                  <?php
-                 $servername="127.0.0.1";
-                 $username="root";
-                 $password="";
-                 $database="paintings";
-
-                $connection= new mysqli($servername,$username,$password,$database);
-
-                if($connection->connect_error){
-                    die("Lidhja deshtoi: " . $connection->connect_error);
-                }
+                  
+                  include "DatabaseConnection.php";
+                  include_once "PikturaRepository.php";
 
 
-                $result=$connection->query("SELECT * FROM piktura");
+                  $strep = new PikturaRepository();
+                  $pikturat = $strep->getAllPaintings();
 
-                if(!$result){
+                if(!$pikturat){
                     die("Invalid query: ". $connection->connect_error);
                 }
 
-                while($row=$result->fetch_assoc()){
+                foreach($pikturat as $piktura) { 
                     echo "    
                 <tr>
-                    <td>$row[ID]</td>
-                    <td><a href='#'>$row[Piktura]</a></td>
-                    <td>$row[Emri]</td>
-                    <td>$row[Autori]</td>
-                    <td>$row[Cmimi]</td>
+                    <td>$piktura[ID]</td>
+                    <td><a href='#'>$piktura[Piktura]</a></td>
+                    <td>$piktura[Emri]</td>
+                    <td>$piktura[Autori]</td>
+                    <td>$piktura[Cmimi]</td>
                     <td>
-                        <a class='btn btn-primary btn-sm' href='edit.php?id=$row[ID]'>Ndrysho</a>
-                        <a class='btn btn-danger btn-sm' href='delete.php?id=$row[ID]'>Fshije</a>
+                        <a class='btn btn-primary btn-sm' href='edit.php?id=$piktura[ID]'>Ndrysho</a>
+                        <a class='btn btn-danger btn-sm' href='delete.php?id=$piktura[ID]'>Fshije</a>
                     </td>
                 </tr>
                 ";
