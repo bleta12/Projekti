@@ -140,7 +140,7 @@
             <p>Georgia Totto O'Keeffe was an American modernist painter called the "Mother of American
                 modernism". By the time she graduated from high school in 1905, O’Keeffe had determined to make her
                 way as an artist. She studied at the Art Institute of Chicago and the Art Students League in New
-                York.dahda
+                York.
             </p>
             <div id="extraText2" class="hidden">
                 <h1>Getting Famouse</h1>
