@@ -59,9 +59,8 @@ p {
     text-align: right;
     color: transparent;
 }
-
 .btn-primary {
-    background-color: #3498db;
+    background-color: black;
     color: #fff;
     padding: 10px 20px;
     text-decoration: none;
@@ -69,4 +68,10 @@ p {
     font-weight: bold;
     display: inline-block;
     margin-top: 10px;
+    transition: background-color 0.15s ease; 
+}
+
+.btn-primary:hover {
+    background-color: white;
+    color: blue;
 }
