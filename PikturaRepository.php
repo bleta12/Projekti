@@ -20,12 +20,12 @@ class PikturaRepository{
         $cmimi=$Piktura->getCmimi();
         
 
-        $sql = "INSERT INTO Piktura(piktura,emri,autori,cmimi) VALUES (?,?,?,?,?,?,?,?)";
+        $sql = "INSERT INTO Piktura(piktura,emri,autori,cmimi) VALUES (?,?,?,?)";
 
         $statement = $conn->prepare($sql);
         $statement->execute([$piktura,$emri,$autori,$cmimi]);
 
-        echo "<script>alert('U shtua me sukses!')</script>";
+        
     }
 
 
@@ -37,6 +37,17 @@ class PikturaRepository{
 
         $pikturat = $statement->fetchAll();
         return $pikturat;
+    }
+
+    public function editPiktura($id,$piktura,$emri,$autori,$cmimi){
+        $conn = $this->connection;
+        $sql = "UPDATE studenti SET piktura=?,emri=?, autori=?, cmimi=? WHERE Id=?";
+
+        $statement = $conn->prepare($sql);
+        $statement->execute([$piktura,$emri,$autori,$cmimi,$id]);
+
+        echo "<script>alert('U ndryshua me sukses!')</script>";
+
     }
 
 

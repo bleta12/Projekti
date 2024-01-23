@@ -1,16 +1,7 @@
 <?php
-  $servername="127.0.0.1";
-  $username="root";
-  $password="";
-  $database="paintings";
+ include_once 'Piktura.php';
+ include_once 'PikturaRepository.php';
 
- $connection= new mysqli($servername,$username,$password,$database);
- 
-
-  $piktura="";
-  $emri="";
-  $autori="";
-  $cmimi="";
   $errorMesazh="";
   $successMessage="";
 
@@ -28,19 +19,16 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
         break;
     }
 
-    $sql="INSERT INTO piktura(piktura,emri,autori,cmimi)"."VALUES ('$piktura','$emri','$autori','$cmimi')";
+   
+    $piktura1 = new Piktura($piktura,$emri,$autori,$cmimi);
 
-    $result=$connection->query($sql);
+    $pikturaRepository = new PikturaRepository();
+    $pikturaRepository ->insertPainting($piktura1);
 
-    if(!$result){
+    if(!$pikturaRepository){
         $errorMesazh= "Invalid query: ". $connection->connect_error;
         break;
     }
-
-    $piktura="";
-    $emri="";
-    $autori="";
-    $cmimi="";
 
     $successMessage="Piktura eshte shtuar me sukses";
 
@@ -82,25 +70,25 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
             <div class="row mb-3">
                 <label class="col-sm-3 col-form-label">Piktura</label>
                 <div class="col-sm-6">
-                    <input type="text" class="form-control" name="Piktura" value="<?php echo $piktura; ?>">
+                    <input type="text" class="form-control" name="Piktura" value="">
                 </div>
             </div>
             <div class="row mb-3">
                 <label class="col-sm-3 col-form-label">Emri</label>
                 <div class="col-sm-6">
-                    <input type="text" class="form-control" name="Emri" value="<?php echo $emri; ?>">
+                    <input type="text" class="form-control" name="Emri" value="">
                 </div>
             </div>
             <div class="row mb-3">
                 <label class="col-sm-3 col-form-label">Autori</label>
                 <div class="col-sm-6">
-                    <input type="text" class="form-control" name="Autori" value="<?php echo $autori; ?>">
+                    <input type="text" class="form-control" name="Autori" value="">
                 </div>
             </div>
             <div class="row mb-3">
                 <label class="col-sm-3 col-form-label">Cmimi</label>
                 <div class="col-sm-6">
-                    <input type="text" class="form-control" name="Cmimi" value="<?php echo $cmimi; ?>">
+                    <input type="text" class="form-control" name="Cmimi" value="">
                 </div>
             </div>
 

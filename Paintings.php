@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paintings</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="detyraa.css">
     <link rel="stylesheet" href="Header.css">
     <link rel="stylesheet" href="foter.css">
@@ -64,7 +65,7 @@ crossorigin="anonymous"></script>
             <div class="autori">
                 <p>The Last Supper</p>
                 <p>By Leonardo da Vinci</p>
-                <button id="addToCartButton1">Add to Cart</button>
+                <a class="btn btn-primary" href="ShopingCart.php" role="button" >Add to Cart</a>
         </div>
         </div>
         <div class="picture">
