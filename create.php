@@ -18,23 +18,22 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
         $errorMesazh=" Duhet te plotesohen te gjitha hapsirat";
         break;
     }
-
+    
    
     $piktura1 = new Piktura($piktura,$emri,$autori,$cmimi);
 
     $pikturaRepository = new PikturaRepository();
-    $pikturaRepository ->insertPainting($piktura1);
-
-    if(!$pikturaRepository){
-        $errorMesazh= "Invalid query: ". $connection->connect_error;
+    $exist=$pikturaRepository ->insertPainting($piktura1);
+  
+    if (!$exist) {
+        $errorMesazh="Piktura ekziston";
         break;
     }
+    
+    $successMessage = "Piktura eshte shtuar me sukses";
 
-    $successMessage="Piktura eshte shtuar me sukses";
-
-    header("location: Tabela.php");
-    exit;
-
+     header("location: Tabela.php");
+     exit;
 
    }while(false);
 
@@ -60,7 +59,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
             echo "  
          <div class='alert alert-warning alert-dismissible fade show' role='alert'>
           <span>$errorMesazh</span>
-           <button type='button' class='btn-close data-bs-dismiss='alert' aria-label='Close''></button>
+           <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
          </div>
             ";
          } 
@@ -99,16 +98,15 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
                 <div class='row mb-3'>
                    <div class='offset-sm-3 col-sm-6'>
                      <div class='alert alert-success alert-dissmisible fade show' role='alert'>
-                        <strong>$successMessage</strong>
+                        <span>$successMessage</span>
                         <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
                      </div>
                 </div>
              </div>";
+
             }
 
             ?>
-
-
             <div class="row mb-3">
                 <div class="offset-sm-3 col-sm-3 d-grid">
                     <button type="Submit" class="btn btn-primary">Submit</button>
