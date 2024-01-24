@@ -19,7 +19,7 @@ if (isset($_POST['submit'])) {
                 'email' => $user->getEmail(),
                 'isAdmin' => $user->getIsAdmin()
             ];
-            header("location: Header.php");
+            header("location: Home.php");
             exit;
         }
     else {
@@ -143,7 +143,7 @@ if (isset($_POST['submit'])) {
 >>>>>>> Stashed changes
             
             <div class="register-link">
-                <p>Don't have an account?<a href="SignUp.html"> Register</a></p>
+                <p>Don't have an account?<a href="SignUp.php"> Register</a></p>
             </div>
         </form>
     </div>
