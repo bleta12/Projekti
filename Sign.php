@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 <?php
    include_once 'User.php';
    include_once 'UserRepo.php';
@@ -29,6 +30,8 @@ if (isset($_POST['submit'])) {
 
 }
 ?>
+=======
+>>>>>>> Stashed changes
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -37,6 +40,12 @@ if (isset($_POST['submit'])) {
     <title>Document</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="signin.css">
+<<<<<<< Updated upstream
+=======
+    <link rel="stylesheet" href="foter.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+>>>>>>> Stashed changes
 </head>
    
 
@@ -69,9 +78,21 @@ if (isset($_POST['submit'])) {
         return false;
     }
 
+<<<<<<< Updated upstream
     return true;
 }
        
+=======
+    
+    alert("Form submitted successfully!");
+    return true;
+    
+}
+    
+    
+    
+    
+>>>>>>> Stashed changes
 </script>
 
 
@@ -85,6 +106,7 @@ if (isset($_POST['submit'])) {
     </div>
 
     <div class="form">
+<<<<<<< Updated upstream
         <form action="" id="registrationForm" onsubmit="return validateForm()" method="POST">
             <h1>Log in</h1>
             <div class="input-box">
@@ -96,12 +118,29 @@ if (isset($_POST['submit'])) {
                 <input type="password" id="password" name="password" placeholder="password" size="16" required>
                 <i class='bx bxs-lock-alt' ></i>
                 <span id="passwordError" class="error" style="color: red;"></span>
+=======
+        <form action=""id="registrationForm" onsubmit="return validateForm()">
+            <h1>Log in</h1>
+            <div class="input-box">
+                <input type="text" id="username" placeholder="username" size="8" required>
+                <i class='bx bxs-user'></i>
+                <span id="nameError" class="error"></span>
+            </div>
+            <div class="input-box">
+                <input type="password" id="password" placeholder="password" size="16" required>
+                <i class='bx bxs-lock-alt' ></i>
+                <span id="passwordError" class="error"></span>
+>>>>>>> Stashed changes
             </div>
             <div class="remember-forget">
                 <label><input type="checkbox">Remember me </label>
                 <a href="#">Forgot password?</a>
             </div>
+<<<<<<< Updated upstream
                 <button type="submit" name="submit" class="btn">Login</button>
+=======
+                <button type="submit" class="btn">Login</button>
+>>>>>>> Stashed changes
             
             <div class="register-link">
                 <p>Don't have an account?<a href="SignUp.html"> Register</a></p>
@@ -111,5 +150,58 @@ if (isset($_POST['submit'])) {
 </div>
 </body>
 
+<<<<<<< Updated upstream
     <?php include "Footer.php"; ?>
+=======
+<footer class="footer" style="background-color: rgb(184,202,220)">
+    <div class="kryesor">
+        <div class="rreshti">
+            <div class="kolon">
+                <h4><i class='bx bxs-paint' ></i>SA-SELL ART</h4>
+               
+               
+               <p style="color: black;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size:20px;
+">"What would life be if we had no courage to attempt anything"</p>
+               
+            </div>
+            
+                <div class="kolon">
+                    <h4>Address</h4>
+                    <ul>
+                        <li><a href="#"><i class='bx bxs-map-pin' ></i>Lagjja Kalabria,10000 Prishtine,Kosove</a></li>
+                        <li><a href="#"><i class='bx bxs-home' ></i>More About us</a></li>
+                    </ul>
+       </div>
+  
+  
+  
+        <div class="kolon">
+            <h4>KONTAKTE</h4>
+            <ul>
+                <li><a href="Services.html"><i class='bx bxs-info-circle' ></i>info@sellart.net</a></li>
+                <li><a href="#"><i class='bx bxs-phone' ></i>+383 38 142 283</a></li>
+            </ul>
+</div>
+    
+<div class="kolon">
+<h4>Follow us on:</h4>
+<div class="linqet">
+
+
+    <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+<a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+<a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+<a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+
+  
+
+</div>
+</div>
+</div>   
+</div>
+<hr>
+<p class="copyright">All rights reserved by &copy;Sell Art 2023</p>
+
+</footer>
+>>>>>>> Stashed changes
 </html>

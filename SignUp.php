@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 <?php
 include_once 'User.php';
 include_once 'UserRepo.php';
@@ -37,6 +38,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 ?>
 
 
+=======
+>>>>>>> Stashed changes
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -52,19 +55,28 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         function validateForm() {
           var name = document.getElementById("name").value;
           var email = document.getElementById("email").value;
+<<<<<<< Updated upstream
           var username = document.getElementById("username").value;
+=======
+>>>>>>> Stashed changes
           var password = document.getElementById("password").value;
           var confirmPassword = document.getElementById("confirmPassword").value;
 
     
           var nameError = document.getElementById("nameError");
           var emailError = document.getElementById("emailError");
+<<<<<<< Updated upstream
           var usernameError = document.getElementById("usernameError");
+=======
+>>>>>>> Stashed changes
           var passwordError = document.getElementById("passwordError");
     
           nameError.innerHTML = "";
           emailError.innerHTML = "";
+<<<<<<< Updated upstream
           usernameError.innerHTML="";
+=======
+>>>>>>> Stashed changes
           passwordError.innerHTML = "";
     
 
@@ -78,6 +90,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             emailError.innerHTML = "Invalid email address.";
             return false;
           }
+<<<<<<< Updated upstream
           var nameRegex = /^(?=.*[a-zA-Z])(?=.*[0-9])[a-zA-Z0-9]{3,}$/;
 
           if (!nameRegex.test(username)) {
@@ -85,6 +98,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                usernameError.style.color = "red";
             return false;
           }
+=======
+>>>>>>> Stashed changes
     
           if (password.length < 8) {
             passwordError.innerHTML = "Password must be at least 8 characters.";
@@ -96,20 +111,32 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
          return false;
          }
     
+<<<<<<< Updated upstream
+=======
+          alert("Form submitted successfully!");
+>>>>>>> Stashed changes
           return true;
         }
       </script>
     
     <div class="contact-form">
+<<<<<<< Updated upstream
         <form action="" id="registrationForm" onsubmit="return validateForm()" method="POST">
           <h2>Sign Up</h2>
           <input type="hidden" name="idAdmin" value="">
           <div class="input-box">
             <input type="text" required="true" name="name" id="name" placeholder="Full name" value="">
+=======
+        <form action="" id="registrationForm" onsubmit="return validateForm()">
+          <h2>Sign Up</h2>
+          <div class="input-box">
+            <input type="text" required="true" name="name" id="name" placeholder="Full name">
+>>>>>>> Stashed changes
             <span id="nameError" class="error" style="color: red;"></span>
           </div> 
           
           <div class="input-box">
+<<<<<<< Updated upstream
             <input type="email" required="true" name="email" id="email" placeholder="Email" value="">
             <span id="emailError" class="error" style="color: red;"></span>
           </div>
@@ -121,6 +148,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
           
           <div class="input-box">
             <input type="password" required="true" name="password" id="password" placeholder="Password" value="">
+=======
+            <input type="email" required="true" name="email" id="email" placeholder="Email">
+            <span id="emailError" class="error" style="color: red;"></span>
+          </div>
+          
+          <div class="input-box">
+            <input type="password" required="true" name="password" id="password" placeholder="Password">
+>>>>>>> Stashed changes
             <span id="passwordError" class="error" style="color: red;"></span>
           </div>
 
@@ -129,7 +164,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
           </div>
           
           <div class="input-box">
+<<<<<<< Updated upstream
            <input type="submit" value="Send" name="submitbtn">
+=======
+            <input type="submit" value="Send" name="" src="Sign.html">
+>>>>>>> Stashed changes
           </div>
         </form>
       </div>
