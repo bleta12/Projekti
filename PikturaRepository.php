@@ -79,6 +79,14 @@ class PikturaRepository{
         return $piktura;
     }
 
+    public function getAllOrders(){
+        $conn = $this->connection;
+        $sql = "SELECT * FROM order o,piktura p,user u";
+        $statement = $conn->query($sql);
+        $pikturat = $statement->fetchAll();
+        return $pikturat;
+    }
+
 
 
 }
