@@ -69,8 +69,7 @@
         <nav>
           <ul class="menu">
               <li class="logo"><img src="sell art.png" alt="Sell Art"></li>
-<<<<<<< Updated upstream
-              <li class="item"><a href="Header.php">Home</a></li>
+              <li class="item"><a href="Home.php">Home</a></li>
               <li class="item"><a href="Paintings.php">Paintings</a></li>
               <li class="item"><a href="about.php">About</a></li>
               <li class="item"><a href="Services.php">Services</a></li>
@@ -84,16 +83,6 @@
               
               <li class="item button"><a href="Sign.php">Log In</a></li>
               <li class="item button secondary"><a href="SignUp.php">Sign Up</a></li>
-=======
-              <li class="item"><a href="Header.html">Home</a></li>
-              <li class="item"><a href="Paintings.html">Paintings</a></li>
-              <li class="item"><a href="about.html">About</a></li>
-              <li class="item"><a href="Services.html">Services</a></li>
-              
-              </li>
-              <li class="item button"><a href="Sign.html">Log In</a></li>
-              <li class="item button secondary"><a href="SignUp.html">Sign Up</a></li>
->>>>>>> Stashed changes
               <li class="toggle"><span class="bars"></span></li>
           </ul>
       </nav>
@@ -199,11 +188,7 @@
       </div>
 
       <div class="contact-form">
-<<<<<<< Updated upstream
         <form action="" id="registrationForm" onsubmit="return validateForm()" method="POST">
-=======
-        <form action="" id="registrationForm" onsubmit="return validateForm()">
->>>>>>> Stashed changes
           <h2>Send Message</h2>
           <div class="input-box">
             <input type="text" required="true" name="name"id="name" placeholder="Full Name">
