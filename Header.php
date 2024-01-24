@@ -1,10 +1,19 @@
 <?php
+ session_start();
 
 
+ if (isset($_GET['logout'])) {
+  
+  $_SESSION = array();
 
+  
+  session_destroy();
 
+  
+  header("Location: Sign.php");
+  exit;
+}
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -53,9 +62,20 @@
               </svg>
             </a>
           </li>
-         
-          <li class="item button"><a href="Sign.php">Log In</a></li>
-          <li class="item button secondary"><a href="SignUp.php">Sign Up</a></li>
+         <?php 
+           if (isset($_SESSION['user'])){
+            echo '<li class="item button"><a href="?logout=1">Log Out</a></li>';
+                
+           }
+           else{
+          echo '<li class="item button"><a href="Sign.php">Log In</a></li>';
+          echo '<li class="item button secondary"><a href="SignUp.php">Sign Up</a></li>';     
+           }
+           if (isset($_SESSION['user']) && $_SESSION['user']['isAdmin'] == 1) {
+            echo '<li class="item button"><a href="Tabela.php">Menage Painting</a></li>';
+             }
+ 
+          ?>
           <li class="toggle"><span class="bars"></span></li>
       </ul>
   </nav>

@@ -16,22 +16,19 @@ if (isset($_POST['submit'])) {
             $_SESSION['user'] = [
                 'username' => $user->getUsername(),
                 'email' => $user->getEmail(),
-                'password' => $user->getPassword(),
-                'isAdmin' => $user->getIsAdmin(),
+                'isAdmin' => $user->getIsAdmin()
             ];
             header("location: Header.php");
             exit;
         }
     else {
-        echo '<script>alert("Invalid email/username or password");</script>';
+        echo '<script>alert("Invalid username or password");</script>';
         echo '<script>window.location.href = "Sign.php";</script>';
         exit;
     }
 
 }
 ?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
