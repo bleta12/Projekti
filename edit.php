@@ -80,7 +80,7 @@ try {
     exit();
 }
 
-// Display success message if available
+
 if (isset($_SESSION['successMessage'])) {
     echo "
     <div class='row mb-3'>
@@ -92,11 +92,11 @@ if (isset($_SESSION['successMessage'])) {
         </div>
     </div>";
 
-    // Clear the success message from the session
+    
     unset($_SESSION['successMessage']);
 }
 
-// Display error message if available
+
 if (isset($_SESSION['errorMessage'])) {
     echo "
     <div class='row mb-3'>
@@ -108,7 +108,7 @@ if (isset($_SESSION['errorMessage'])) {
         </div>
     </div>";
 
-    // Clear the error message from the session
+    
     unset($_SESSION['errorMessage']);
 }
 ?>

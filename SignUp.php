@@ -1,3 +1,42 @@
+<?php
+include_once 'User.php';
+include_once 'UserRepo.php';
+
+  session_start();
+
+ $errorMesazh="";
+ $successMessage="";
+
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+  $name = $_POST["name"];
+  $email = $_POST["email"];
+  $username = $_POST["username"];
+  $isAdmin = (strtoupper(substr($_POST["email"], 0, 1)) === 'A') ? true : false;
+  $password = $_POST["password"];
+  do {
+
+    $user = new User($name,$email,$username,$isAdmin,$password);
+
+    $userRepo = new UserRepo();
+    $exist=$userRepo->insertUser($user);
+  
+    if (!$exist) {
+      echo '<script>alert("Useri ekziston ' . $name. '");</script>';
+        break;
+    }
+
+     header("location: Sign.php");
+     exit;
+
+   }while(false);
+
+}
+
+  
+?>
+
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -13,16 +52,19 @@
         function validateForm() {
           var name = document.getElementById("name").value;
           var email = document.getElementById("email").value;
+          var username = document.getElementById("username").value;
           var password = document.getElementById("password").value;
           var confirmPassword = document.getElementById("confirmPassword").value;
 
     
           var nameError = document.getElementById("nameError");
           var emailError = document.getElementById("emailError");
+          var usernameError = document.getElementById("usernameError");
           var passwordError = document.getElementById("passwordError");
     
           nameError.innerHTML = "";
           emailError.innerHTML = "";
+          usernameError.innerHTML="";
           passwordError.innerHTML = "";
     
 
@@ -36,6 +78,13 @@
             emailError.innerHTML = "Invalid email address.";
             return false;
           }
+          var nameRegex = /^(?=.*[a-zA-Z])(?=.*[0-9])[a-zA-Z0-9]{3,}$/;
+
+          if (!nameRegex.test(username)) {
+               usernameError.innerHTML = "Invalid username. Use at least 3 characters, letters, and numbers.";
+               usernameError.style.color = "red";
+            return false;
+          }
     
           if (password.length < 8) {
             passwordError.innerHTML = "Password must be at least 8 characters.";
@@ -47,26 +96,31 @@
          return false;
          }
     
-          alert("Form submitted successfully!");
           return true;
         }
       </script>
     
     <div class="contact-form">
-        <form action="Sign.php" id="registrationForm" onsubmit="return validateForm()" method="POST">
+        <form action="" id="registrationForm" onsubmit="return validateForm()" method="POST">
           <h2>Sign Up</h2>
+          <input type="hidden" name="idAdmin" value="">
           <div class="input-box">
-            <input type="text" required="true" name="name" id="name" placeholder="Full name">
+            <input type="text" required="true" name="name" id="name" placeholder="Full name" value="">
             <span id="nameError" class="error" style="color: red;"></span>
           </div> 
           
           <div class="input-box">
-            <input type="email" required="true" name="email" id="email" placeholder="Email">
+            <input type="email" required="true" name="email" id="email" placeholder="Email" value="">
             <span id="emailError" class="error" style="color: red;"></span>
+          </div>
+
+          <div class="input-box">
+          <input type="text" id="username" placeholder="username" name="username" size="8" required value="">
+            <span id="usernameError" class="error" style="color: red;"></span>
           </div>
           
           <div class="input-box">
-            <input type="password" required="true" name="password" id="password" placeholder="Password">
+            <input type="password" required="true" name="password" id="password" placeholder="Password" value="">
             <span id="passwordError" class="error" style="color: red;"></span>
           </div>
 
@@ -75,7 +129,7 @@
           </div>
           
           <div class="input-box">
-           <input type="submit" value="Send" name="">
+           <input type="submit" value="Send" name="submitbtn">
           </div>
         </form>
       </div>

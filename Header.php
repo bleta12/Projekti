@@ -1,3 +1,11 @@
+<?php
+
+
+
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,15 +30,10 @@
 });
 
     </script>
+    
     <?php  
-    if(isset($_POST['submit'])){
-         $name=$_POST['username'];
-    echo '<script>alert("Mire Se Vini ' . $name. '");</script>';
-    }
-
     $faqja='SELLART';
     setcookie("faqja",$faqja,time()+30*24*60*60);
-
     ?>
  
 </head>
