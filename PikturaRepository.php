@@ -79,16 +79,6 @@ class PikturaRepository{
         return $piktura;
     }
 
-    function deletePiktura($id){
-        $conn = $this->connection;
-
-        $sql = "DELETE FROM piktura WHERE Id=?";
-
-        $statement = $conn->prepare($sql);
-        $statement->execute([$id]);
-    }
-
-
 
 
 }
