@@ -41,7 +41,7 @@
                     <td><a href='#'>$piktura[Piktura]</a></td>
                     <td>$piktura[Emri]</td>
                     <td>$piktura[Autori]</td>
-                    <td>$piktura[Cmimi]</td>
+                    <td>\${$piktura['Cmimi']}</td>
                     <td>
                         <a class='btn btn-primary btn-sm' href='edit.php?id=$piktura[ID]'>Ndrysho</a>
                         <a class='btn btn-danger btn-sm' href='delete.php?id=$piktura[ID]'>Fshije</a>
