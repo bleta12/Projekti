@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+<<<<<<< Updated upstream
+
+=======
+>>>>>>> Stashed changes
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -50,6 +54,7 @@
                 <div class='autori'>
                     <p>$piktura[Emri]</p>
                     <p>$piktura[Autori]</p>
+                    <p>$piktura[Cmimi]</p>
                     <p>$piktura[Cmimi]</p>
                     <a class='btn btn-primary' href='ShopingCart.php' role='button'>Add to Cart</a>
                 </div>
