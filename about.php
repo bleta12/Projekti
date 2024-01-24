@@ -3,37 +3,32 @@
 
 <head>
     <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sell Art</title>
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell Art</title>
+
     <link rel="stylesheet" href="about.css">
     <link rel="stylesheet" href="Header.css">
     <link rel="stylesheet" href="foter.css">
     <link rel="stylesheet" href="Abbout.css">
     <link rel="stylesheet" href="m.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap" rel="stylesheet">
-    <script
-    src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-    integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
-    crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
     <script>
         $(function() {
-        $(".toggle").on("click", function() {
-            if ($(".item").hasClass("active")) {
-                $(".item").removeClass("active");
-            } else {
-                $(".item").addClass("active");
-            }
+            $(".toggle").on("click", function() {
+                if ($(".item").hasClass("active")) {
+                    $(".item").removeClass("active");
+                } else {
+                    $(".item").addClass("active");
+                }
+            });
         });
-    });
-        </script>
+    </script>
 
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    
-</head>
     <header style="width: 100%;">
         <nav>
             <ul class="menu">
@@ -42,12 +37,21 @@
                 <li class="item"><a href="Paintings.php">Paintings</a></li>
                 <li class="item"><a href="about.php">About</a></li>
                 <li class="item"><a href="Services.php">Services</a></li>
+                <li class="item">
+                    <a href="ShopingCart.php">
+                        <svg class="item" style="height:20px; margin-bottom:0px" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 15a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm0 0h8m-8 0-1-4m9 4a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-9-4h10l2-7H3m2 7L3 4m0 0-.792-3H1" />
+                        </svg>
+                    </a>
+                </li>
+
                 <li class="item button"><a href="Sign.php">Log In</a></li>
                 <li class="item button secondary"><a href="SignUp.php">Sign Up</a></li>
                 <li class="toggle"><span class="bars"></span></li>
             </ul>
         </nav>
     </header>
+
     <div class="bgfoto">
         <h1>ABOUT ART</h1>
     </div>
@@ -109,6 +113,7 @@
     <div class="square-hr">
         <span>Artists who made the world of Art complete</span>
     </div>
+
 <body>
     <section class="main">
         <div class="card">
@@ -132,9 +137,9 @@
         <div class="card">
             <div class="card-img car-2"></div>
             <h1>Georgia</h1>
-            <p>Georgia Totto O'Keeffe  was an American modernist painter called the "Mother of American
+            <p>Georgia Totto O'Keeffe was an American modernist painter called the "Mother of American
                 modernism". By the time she graduated from high school in 1905, O’Keeffe had determined to make her
-                way as an artist. She studied at the  Art Institute of Chicago and the  Art Students League in New
+                way as an artist. She studied at the Art Institute of Chicago and the Art Students League in New
                 York.
             </p>
             <div id="extraText2" class="hidden">
@@ -165,49 +170,49 @@
 
 
 
-    <footer class="footer" style="width: 100%;">
-        <div class="kryesor">
-            <div class="rreshti">
-                <div class="kolon">
-                    <h4><i class='bx bxs-paint'></i>SA-SELL ART</h4>
-                    <p style="color: black;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+<footer class="footer" style="width: 100%;">
+    <div class="kryesor">
+        <div class="rreshti">
+            <div class="kolon">
+                <h4><i class='bx bxs-paint'></i>SA-SELL ART</h4>
+                <p style="color: black;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
                         sans-serif;font-size:20px;">"What would life be if we had no courage to attempt
-                        anything"</p>
-                </div>
+                    anything"</p>
+            </div>
 
-                <div class="kolon">
-                    <h4>Address:</h4>
-                    <ul>
-                        <li><a href="#"><i class='bx bxs-map-pin'></i>Lagjja Kalabria,10000
-                                Prishtine,Kosove</a></li>
-                        <li><a href="#"><i class='bx bxs-home'></i>More About us</a></li>
-                    </ul>
-                </div>
+            <div class="kolon">
+                <h4>Address:</h4>
+                <ul>
+                    <li><a href="#"><i class='bx bxs-map-pin'></i>Lagjja Kalabria,10000
+                            Prishtine,Kosove</a></li>
+                    <li><a href="#"><i class='bx bxs-home'></i>More About us</a></li>
+                </ul>
+            </div>
 
-                <div class="kolon">
-                    <h4>KONTAKTE:</h4>
-                    <ul>
-                        <li><a href="Services.html"><i class='bx bxs-info-circle'></i>info@sellart.net</a></li>
-                        <li><a href="#"><i class='bx bxs-phone'></i>+383 38 142 283</a></li>
-                    </ul>
-                </div>
+            <div class="kolon">
+                <h4>KONTAKTE:</h4>
+                <ul>
+                    <li><a href="Services.html"><i class='bx bxs-info-circle'></i>info@sellart.net</a></li>
+                    <li><a href="#"><i class='bx bxs-phone'></i>+383 38 142 283</a></li>
+                </ul>
+            </div>
 
-                <div class="kolon">
-                    <h4>Follow us on:</h4>
-                    <div class="linqet">
-                        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
-                        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
+            <div class="kolon">
+                <h4>Follow us on:</h4>
+                <div class="linqet">
+                    <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
         </div>
+    </div>
 
-        <hr>
+    <hr>
 
-        <p class="copyright">All rights reserved by &copy;Sell Art 2023</p>
-    </footer>
+    <p class="copyright">All rights reserved by &copy;Sell Art 2023</p>
+</footer>
 
 
 </html>
