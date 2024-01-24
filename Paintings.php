@@ -32,11 +32,6 @@
 <body>
 
 
-
-
-
-
-
     <h1>Muse Fairytale</h1>
     <div class="kryesori">
 
@@ -55,6 +50,7 @@
                 <div class='autori'>
                     <p>$piktura[Emri]</p>
                     <p>$piktura[Autori]</p>
+                    <p>$piktura[Cmimi]</p>
                     <a class='btn btn-primary' href='ShopingCart.php' role='button'>Add to Cart</a>
                 </div>
             </div>";
@@ -63,11 +59,7 @@
 
 
 
-
     </div>
-
-
-
 
 
 </body>
