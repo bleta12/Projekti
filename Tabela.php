@@ -9,6 +9,7 @@
     <div class="container my-5">
         <h2>Lista e Pikturave</h2>
         <a class="btn btn-primary" href="create.php" role="button">Shto nje Pikture</a>
+        <a class="btn btn-primary" href="Paintings.php" role="button">Paintings</a>
         <br>
         <table class="table">
             <thead>

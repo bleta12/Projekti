@@ -106,7 +106,7 @@
               
          }
          else{
-        echo '<li class="item button"><a href="Sign.php">Log In</a></li>';
+        echo '<li class="item button"><a href="SignIn.php">Log In</a></li>';
         echo '<li class="item button secondary"><a href="SignUp.php">Sign Up</a></li>';     
          }
          if (isset($_SESSION['user']) && $_SESSION['user']['isAdmin'] == 1) {

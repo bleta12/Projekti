@@ -23,7 +23,7 @@ if (isset($_POST['submit'])) {
         }
     else {
         echo '<script>alert("Invalid username or password");</script>';
-        echo '<script>window.location.href = "Sign.php";</script>';
+        echo '<script>window.location.href = "SignIn.php";</script>';
         exit;
     }
 

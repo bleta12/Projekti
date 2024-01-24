@@ -26,7 +26,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         break;
     }
 
-     header("location: Sign.php");
+     header("location: SignIn.php");
      exit;
 
    }while(false);
