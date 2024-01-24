@@ -10,7 +10,7 @@
   session_destroy();
 
   
-  header("Location: Sign.php");
+  header("Location: SignIn.php");
   exit;
 }
 ?>
