@@ -27,49 +27,30 @@
 
 </head>
 
+<?php include "Header.php" ?>
+
 <body>
 
-    <header>
-        <nav>
-            <ul class="menu">
-                <li class="logo"><img src="sell art.png" alt="Sell Art"></li>
-                <li class="item"><a href="Header.php">Home</a></li>
-                <li class="item"><a href="Paintings.php">Paintings</a></li>
-                <li class="item"><a href="about.php">About</a></li>
-                <li class="item"><a href="Services.php">Services</a></li>
-                <li class="item">
-                    <a href="ShopingCart.php">
-                        <svg class="item" style="height:20px; margin-bottom:0px" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 15a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm0 0h8m-8 0-1-4m9 4a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-9-4h10l2-7H3m2 7L3 4m0 0-.792-3H1" />
-                        </svg>
-                    </a>
-                </li>
 
 
 
-                <li class="item button"><a href="Sign.php">Log In</a></li>
-                <li class="item button secondary"><a href="SignUp.php">Sign Up</a></li>
-                <li class="toggle"><span class="bars"></span></li>
-            </ul>
-        </nav>
-    </header>
 
-    <body>
 
-        <h1>Muse Fairytale</h1>
-        <div class="kryesori">
 
-            <?php
+    <h1>Muse Fairytale</h1>
+    <div class="kryesori">
 
-            include "DatabaseConnection.php";
-            include_once "PikturaRepository.php";
-            $strep = new PikturaRepository();
-            $pikturat = $strep->getAllPaintings();
-            if (!$pikturat) {
-                die("Invalid query: " . $connection->connect_error);
-            }
-            foreach ($pikturat as $piktura) {
-                echo "   <div class='picture'>
+        <?php
+
+        include "DatabaseConnection.php";
+        include_once "PikturaRepository.php";
+        $strep = new PikturaRepository();
+        $pikturat = $strep->getAllPaintings();
+        if (!$pikturat) {
+            die("Invalid query: " . $connection->connect_error);
+        }
+        foreach ($pikturat as $piktura) {
+            echo "   <div class='picture'>
                 <img src='$piktura[Piktura]' alt=''>
                 <div class='autori'>
                     <p>$piktura[Emri]</p>
@@ -77,19 +58,19 @@
                     <a class='btn btn-primary' href='ShopingCart.php' role='button'>Add to Cart</a>
                 </div>
             </div>";
-            }
-            ?>
+        }
+        ?>
 
 
 
 
-        </div>
+    </div>
 
 
 
 
 
-    </body>
-    <?php include "Footer.php" ?>
+</body>
+<?php include "Footer.php" ?>
 
 </html>
