@@ -47,11 +47,6 @@ body{
     user-select: none;
     transition: 0.3s ease;
 }
-.Fotot .teHistori .imgWrapper img:hover{
-    
-}
-
-
 .Fotot .teHistori .imgWrapper:hover img{
     transform: scale(1.5);
 }

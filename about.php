@@ -22,10 +22,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sell Art</title>
 
-    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="cssfiles/about.css">
     <link rel="stylesheet" href="cssfiles/Header.css">
     <link rel="stylesheet" href="cssfiles/foter.css">
-    <link rel="stylesheet" href="Abbout.css">
+    <link rel="stylesheet" href="cssfiles/Abbout.css">
     <link rel="stylesheet" href="cssfiles/m.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -78,7 +78,7 @@
 </nav>
 </header>
 
-    <div class="bgfoto">
+    <div class="bgfoto" style="background-image: url(photo/son.png);">
         <h1>ABOUT ART</h1>
     </div>
 
@@ -100,7 +100,7 @@
     <hr style="display: flex; margin-top: 150px; width:100%;height: 6px;background-color: rgb(5, 66, 45);">
     <div class="r">
         <h1>"I paint my own reality"</h1>
-        <img src="blog-3.webp" alt="">
+        <img src="photo/blog-3.webp" alt="">
     </div>
 
     <hr style="display: flex; margin-top: 150px; width:100%;height: 6px;background-color: rgb(5, 66, 45);">
@@ -109,16 +109,16 @@
             <div class="Fotot">
                 <div class="teHistori">
                     <div class="imgWrapper">
-                        <img src="colourful-winter-nermine-hanna.jpg" alt="">
+                        <img src="photo/colourful-winter-nermine-hanna.jpg" alt="">
                     </div>
                     <div class="imgWrapper">
-                        <img src="close-up-of-god-and-adam-s-hands-157844809-58ab54a23df78c345b08689c-5c531771c9e77c00014b025e.jpg" alt="">
+                        <img src="photo/close-up-of-god-and-adam-s-hands-157844809-58ab54a23df78c345b08689c-5c531771c9e77c00014b025e.jpg" alt="">
                     </div>
                     <div class="imgWrapper">
-                        <img src="TheStoryOfArt.jpg" alt="">
+                        <img src="photo/TheStoryOfArt.jpg" alt="">
                     </div>
                     <div class="imgWrapper">
-                        <img src="il_570xN.3175370807_a269.webp" alt="">
+                        <img src="photo/il_570xN.3175370807_a269.webp" alt="">
                     </div>
                 </div>
             </div>
@@ -144,7 +144,7 @@
     <section class="main">
         <div class="card">
             <div id="container">
-                <div class="card-img car-1"></div>
+                <div class="card-img car-1" style="background-image: url(photo/Leonardo.webp)"></div>
                 <h1>Leonardo Da Vinci</h1>
                 <p> Leonardo da Vinci was born in Italy.<br>He began his career in the city, but then spent much
                     time in the service of Ludovico Sforza in Milan,he spent his last three years in France, where he
@@ -161,7 +161,7 @@
         </div>
 
         <div class="card">
-            <div class="card-img car-2"></div>
+            <div class="card-img car-2" style="background-image: url('photo/Georgia.jpg');"></div>
             <h1>Georgia</h1>
             <p>Georgia Totto O'Keeffe was an American modernist painter called the "Mother of American
                 modernism". By the time she graduated from high school in 1905, O’Keeffe had determined to make her
@@ -178,7 +178,7 @@
         </div>
 
         <div class="card">
-            <div class="card-img car-3"></div>
+            <div class="card-img car-3" style="background-image: url('photo/Michelangelo.jpg');"></div>
             <h1>Michelangelo</h1>
             <p>Michelangelo was born on 6 March 1475 in Caprese, known today as Caprese Michelangelo.Several months
                 after Michelangelo's birth, the family returned to Florence. During his mother's illness, and after

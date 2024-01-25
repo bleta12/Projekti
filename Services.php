@@ -21,7 +21,7 @@
     <title>Services</title>
     <link rel="stylesheet" href="cssfiles/Header.css">
     <link rel="stylesheet" href="cssfiles/foter.css">
-    <link rel="stylesheet" href="services.css">
+    <link rel="stylesheet" href="cssfiles/services.css">
     <link rel="stylesheet" href="Abbout.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -120,7 +120,7 @@
 
      
        <div class="permbajtja">
-         <div class="titulliServices">
+         <div class="titulliServices" style="background-image: url(photo/titulli.jpg);">
             <p>Our Features & Services</p>
          </div>
 
@@ -128,7 +128,7 @@
            
             <div class="section">
                 <div class="fotoS">
-                <img src="comunication.jpg" alt="">
+                <img src="photo/comunication.jpg" alt="">
             </div>
                 <h2>Communications</h2>
                 <p>Hear from our satisfied customers who have found joy and inspiration in our art. Read their testimonials and discover why SELL ART is a trusted source for art enthusiasts.</p>
@@ -140,7 +140,7 @@
             </div>
             <div class="section">
                 <div class="fotoS">
-                    <img src="features.jpg" alt="">
+                    <img src="photo/features.jpg" alt="">
                 </div>
                 <h2>Features</h2>
                 <p>Become part of our vibrant art community. Engage with us on social media, attend events, and connect with fellow art enthusiasts who share a passion for creativity.</p>
@@ -152,7 +152,7 @@
             </div>
             <div class="section">
               <div class="fotoS">
-                  <img src="customer-engagent-model.png" alt="">
+                  <img src="photo/customer-engagent-model.png" alt="">
               </div>
               <h2>Customer Support and Engagement</h2>
               <p>Customers who receive a personalized experience will return to their favorite painting to buy more in the future than disengaged customers.</p>

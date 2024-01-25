@@ -42,8 +42,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SignUp</title>
-    <link rel="stylesheet" href="SignUp.css">
-    <link rel="stylesheet" href="foter.css">
+    <link rel="stylesheet" href="cssfiles/SignUp.css">
+    <link rel="stylesheet" href="cssfiles/foter.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
@@ -135,7 +135,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
       </div>
 </body>
 
-<footer class="footer" style="width: 100%; margin-left: 0%; background-color: rgb(184, 202, 220);">
+<footer class="footer" style="width: 100%; margin-left: 0%;">
     <div class="kryesor">
         <div class="rreshti">
             <div class="kolon">
