@@ -18,8 +18,6 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
         $errorMesazh=" Duhet te plotesohen te gjitha hapsirat";
         break;
     }
-    
-   
     $piktura1 = new Piktura($piktura,$emri,$autori,$cmimi);
 
     $pikturaRepository = new PikturaRepository();

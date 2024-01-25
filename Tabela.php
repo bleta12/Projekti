@@ -65,7 +65,6 @@ if (!isset($_SESSION['user'])) {
         </table>
         </div>
     </div>
-</body>
 
 <?php include "Footer.php" ?>
 </html>
