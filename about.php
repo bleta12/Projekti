@@ -14,6 +14,7 @@
   exit;
 }
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -43,8 +44,50 @@
         });
     </script>
 
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+    var currentSlideIndex = 0;
+
+    function showSlides() {
+        var slides = document.querySelectorAll('.card');
+
+        slides.forEach((slide, i) => {
+            // Adjusted visibility condition
+            var isVisible = i >= currentSlideIndex && i < currentSlideIndex + 2;
+            slide.style.display = isVisible ? 'flex' : 'none';
+        });
+    }
+
+    function nextSlide() {
+        var slides = document.querySelectorAll('.card');
+        currentSlideIndex = (currentSlideIndex + 1) % (slides.length - 1); // Updated to handle 4 cards
+        showSlides();
+    }
+
+    function prevSlide() {
+        var slides = document.querySelectorAll('.card');
+        currentSlideIndex = (currentSlideIndex - 1 + slides.length - 1) % (slides.length - 1); // Updated to handle 4 cards
+        showSlides();
+    }
+
+    // Show initial slides
+    showSlides();
+
+    // Attach event listeners to buttons
+    document.getElementById('nextButton').addEventListener('click', nextSlide);
+    document.getElementById('prevButton').addEventListener('click', prevSlide);
+});
+
+
+
+
+</script>
+
+
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
     <header style="width: 100%;">
   <nav>
     <ul class="menu">
@@ -142,7 +185,8 @@
 
 <body>
     <section class="main">
-        <div class="card">
+    <button id="prevButton" onclick="prevSlide()">&#60;</button>
+        <div class="card"  id="1">
             <div id="container">
                 <div class="card-img car-1" style="background-image: url(photo/Leonardo.webp)"></div>
                 <h1>Leonardo Da Vinci</h1>
@@ -160,7 +204,63 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card"  id="2">
+    <div id="container">
+        <div class="card-img car-1" style="background-image: url('photo/Georgia.jpg')"></div>
+        <h1>Georgia</h1>
+        <p>Georgia Totto O'Keeffe was an American modernist painter called the "Mother of American
+ modernism". By the time she graduated from high school in 1905, O’Keeffe had determined to make her
+ way as an artist. She studied at the Art Institute of Chicago and the Art Students League in New
+ York.</p>
+        <div id="extraText1" class="hidden">
+            <h1> Getting Famouse</h1>
+            <p>By the mid-1920s, O’Keeffe was recognized as one of America’s most important and successful
+ artists, known for her paintings of New York skyscrapers—an essentially American symbol of
+ modernity—as well as her equally radical depictions of flowers.</p>                  
+        </div>
+        <a href="javascript:void(0)" id="readMoreBtn1" onclick="toggleReadMore(1)">READ MORE</a>
+      </div>
+   </div>
+
+   <div class="card"  id="3">
+ <div id="container">
+     <div class="card-img car-1" style="background-image: url(photo/Leonardo.webp)"></div>
+     <h1>Leonardo3 Da Vinci</h1>
+     <p> Leonardo da Vinci was born in Italy.<br>He began his career in the city, but then spent much
+         time in the service of Ludovico Sforza in Milan,he spent his last three years in France, where he
+         died in 1519.</p>
+     <div id="extraText1" class="hidden">
+         <h1> Paintings</h1>
+         <p>Despite the recent awareness and admiration of Leonardo as a scientist and inventor, his fame
+             rested on his achievements as a painter. These paintings are famous for a variety of qualities
+             that have been much imitated by students and discussed at great length by connoisseurs and
+             critics. By the 1490s Leonardo had already been described as a "Divine" painter</p>
+     </div>
+     <a href="javascript:void(0)" id="readMoreBtn1" onclick="toggleReadMore(1)">READ MORE</a>
+   </div>
+</div>
+
+<!--
+<div class="card"  id="4" style="width: 50px;">
+ <div id="container">
+     <div class="card-img car-1" style="background-image: url(photo/Leonardo.webp)"></div>
+     <h1>Leonardo4 Da Vinci</h1>
+     <p> Leonardo da Vinci was born in Italy.<br>He began his career in the city, but then spent much
+         time in the service of Ludovico Sforza in Milan,he spent his last three years in France, where he
+         died in 1519.</p>
+     <div id="extraText1" class="hidden">
+         <h1> Paintings</h1>
+         <p>Despite the recent awareness and admiration of Leonardo as a scientist and inventor, his fame
+             rested on his achievements as a painter. These paintings are famous for a variety of qualities
+             that have been much imitated by students and discussed at great length by connoisseurs and
+             critics. By the 1490s Leonardo had already been described as a "Divine" painter</p>
+     </div>
+     <a href="javascript:void(0)" id="readMoreBtn1" onclick="toggleReadMore(1)">READ MORE</a>
+   </div>
+</div>
+    -->
+<!--
+        <div class="card" id="2">
             <div class="card-img car-2" style="background-image: url('photo/Georgia.jpg');"></div>
             <h1>Georgia</h1>
             <p>Georgia Totto O'Keeffe was an American modernist painter called the "Mother of American
@@ -177,7 +277,7 @@
             <a href="javascript:void(0)" id="readMoreBtn2" onclick="toggleReadMore(2)">READ MORE</a>
         </div>
 
-        <div class="card">
+        <div class="card" id="3">
             <div class="card-img car-3" style="background-image: url('photo/Michelangelo.jpg');"></div>
             <h1>Michelangelo</h1>
             <p>Michelangelo was born on 6 March 1475 in Caprese, known today as Caprese Michelangelo.Several months
@@ -191,6 +291,22 @@
             </div>
             <a href="javascript:void(0)" id="readMoreBtn3" onclick="toggleReadMore(3)">READ MORE</a>
         </div>
+
+        <div class="card" id="4">
+     <div class="card-img car-3" style="background-image: url('photo/Michelangelo.jpg');"></div>
+     <h1>Michelangelo</h1>
+     <p>Michelangelo was born on 6 March 1475 in Caprese, known today as Caprese Michelangelo.Several months
+         after Michelangelo's birth, the family returned to Florence. During his mother's illness, and after
+         her death in 1481 (when he was six years old), Michelangelo lived with a nanny and her husband.</p>
+     <div id="extraText3" class="hidden">
+         <h1>How It Started</h1>
+         <p>As a young boy, Michelangelo was sent to Florence to study grammar under the Humanist Francesco da
+             Urbino. He showed no interest in his schooling, preferring to copy paintings from churches and
+             seek the company of other painters.</p>
+     </div>
+     <a href="javascript:void(0)" id="readMoreBtn3" onclick="toggleReadMore(3)">READ MORE</a>
+ </div>-->
+ <button id="nextButton" onclick="nextSlide()">&#62;</button>
     </section>
 </body>
 

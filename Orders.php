@@ -4,28 +4,28 @@ class Orders
 {
 
     private $ID;
-    private $produkti;
-    private $cmimi;
+    private $piktura_id;
+    private $user_id;
     private $transporti;
     private $totali;
 
 
-    public function __construct($produkti, $cmimi, $transporti, $totali)
+    public function __construct($piktura_id,$user_id, $transporti, $totali)
     {
-        $this->produkti = $produkti;
+        $this->piktura_id = $piktura_id;
+        $this->user_id = $user_id;
         $this->transporti = $transporti;
         $this->totali = $totali;
-        $this->cmimi = $cmimi;
     }
 
 
-    public function getProdukti()
+    public function getPiktura_Id()
     {
-        return $this->produkti;
+        return $this->piktura_id;
     }
-    public function setProdukti($produkti)
+    public function setPiktura_Id($piktura_id)
     {
-        $this->produkti = $produkti;
+        $this->piktura_id = $piktura_id;
     }
     public function getTransporti()
     {
@@ -43,12 +43,12 @@ class Orders
     {
         $this->totali = $totali;
     }
-    public function getCmimi()
+    public function getUser_Id()
     {
-        return $this->cmimi;
+        return $this->user_id;
     }
-    public function setCmimi($cmimi)
+    public function setUser_Id($user_id)
     {
-        $this->cmimi = $cmimi;
+        $this->user_id = $user_id;
     }
 }
