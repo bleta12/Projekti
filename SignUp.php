@@ -25,8 +25,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
       echo '<script>alert("Useri ekziston ' . $name. '");</script>';
         break;
     }
-
-     header("location: Sign.php");
+       echo '<script>alert("Ju jeni regjistruar me sukses");</script>';
+        echo '<script>window.location.href = "Sign.php";</script>';
      exit;
 
    }while(false);

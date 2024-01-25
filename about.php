@@ -35,7 +35,7 @@
     <nav>
         <ul class="menu">
             <li class="logo"><img src="sell art.png" alt="Sell Art"></li>
-            <li class="item"><a href="Header.php">Home</a></li>
+            <li class="item"><a href="Home.php">Home</a></li>
             <li class="item"><a href="Paintings.php">Paintings</a></li>
             <li class="item"><a href="about.php">About</a></li>
             <li class="item"><a href="Services.php">Services</a></li>

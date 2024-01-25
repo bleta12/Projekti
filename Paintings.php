@@ -30,35 +30,13 @@ crossorigin="anonymous"></script>
 </head>
 <body>
 
-    <header>
-        <nav>
-          <ul class="menu">
-              <li class="logo"><img src="sell art.png" alt="Sell Art"></li>
-              <li class="item"><a href="Header.php">Home</a></li>
-              <li class="item"><a href="Paintings.php">Paintings</a></li>
-              <li class="item"><a href="about.php">About</a></li>
-              <li class="item"><a href="Services.php">Services</a></li>
-              <li class="item">
-                <a href="ShopingCart.php">
-                  <svg class="item" style="height:20px; margin-bottom:0px"  aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 15a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm0 0h8m-8 0-1-4m9 4a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-9-4h10l2-7H3m2 7L3 4m0 0-.792-3H1"/>
-                  </svg>
-                </a>
-              </li>
-              
-
-              
-              <li class="item button"><a href="Sign.php">Log In</a></li>
-              <li class="item button secondary"><a href="SignUp.php">Sign Up</a></li>
-              <li class="toggle"><span class="bars"></span></li>
-          </ul>
-      </nav>
-      </header>
+  <?php include "Header.php"  ?>
     <body>
 
         <h1>Muse Fairytale</h1>
         <div class="kryesori">
 
+<!--
         <div class="picture">
             
             <img src="https://arthive.net/res/media/img/orig/article/8ff/7567073@2x.jpg" alt="">
@@ -229,98 +207,10 @@ crossorigin="anonymous"></script>
    
 </div>
 </div> 
-    </div>
-    </body>
+    </div>    -->
+    </body>  
+
+<?php include "Footer.php" ?>
+
 </html>
-
-    
-    
-
-<body>
-    <footer class="footer">
-        <div class="kryesor">
-            <div class="rreshti">
-                <div class="kolon">
-                    <h4><i class='bx bxs-paint' ></i>SA-SELL ART</h4>
-                   
-             
-                    <p style="color: black;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size:20px;
-                    ">"What would life be if we had no courage to attempt anything"</p>
-
-
-
-                   
-                </div>
-
-                
-                    <div class="kolon">
-                        <h4>Address</h4>
-                        <ul>
-                            <li><a href="#"><i class='bx bxs-map-pin' ></i>Lagjja Kalabria,10000 Prishtine,Kosove</a></li>
-                            <li><a href="#"><i class='bx bxs-home' ></i>More About us</a></li>
-                        </ul>
-           </div>
-      
-      
-      
-            <div class="kolon">
-                <h4>KONTAKTE</h4>
-                <ul>
-                    <li><a href="Services.html"><i class='bx bxs-info-circle'></i>info@sellart.net</a></li>
-                    <li><a href="#"><i class='bx bxs-phone' ></i>+383 38 142 283</a></li>
-                </ul>
-   </div>
-
-        
-   <div class="kolon">
-    <h4>Follow us on:</h4>
-    <div class="linqet">
-    
-     
-        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
-        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
-     
-     
-   
-</div>
-</div>
-
        
-            </div>   
-       
-        </div>
-        <hr>
-
-        <p class="copyright">All rights reserved by &copy;Sell Art 2023</p>
-     
-        
-    </footer>
-    
-</body>
-</html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
