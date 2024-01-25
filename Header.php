@@ -22,8 +22,7 @@ if (isset($_GET['logout'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sell Art</title>
-    <link rel="stylesheet" href="Header.css">
-    <link rel="stylesheet" href="bodyHome.css">
+    <link rel="stylesheet" href="cssfiles/Header.css">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
     <script>
         $(function() {
@@ -69,7 +68,7 @@ if (isset($_GET['logout'])) {
                     echo '<li class="item button secondary"><a href="SignUp.php">Sign Up</a></li>';
                 }
                 if (isset($_SESSION['user']) && $_SESSION['user']['isAdmin'] == 1) {
-                    echo '<li class="item button"><a href="Tabela.php">Menage Painting</a></li>';
+                    echo '<li class="item button"><a href="Tabela.php">Manage Paintings</a></li>';
                 }
                 ?>
                 <li class="toggle"><span class="bars"></span></li>

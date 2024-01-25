@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sell Art</title>
-    <link rel="stylesheet" href="bodyHome.css">
+    <link rel="stylesheet" href="cssfiles/bodyHome.css">
 </head>
 <body>
   <?php include "Header.php" ?>

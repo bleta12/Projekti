@@ -19,8 +19,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services</title>
-    <link rel="stylesheet" href="Header.css">
-    <link rel="stylesheet" href="foter.css">
+    <link rel="stylesheet" href="cssfiles/Header.css">
+    <link rel="stylesheet" href="cssfiles/foter.css">
     <link rel="stylesheet" href="services.css">
     <link rel="stylesheet" href="Abbout.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">

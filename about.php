@@ -23,10 +23,10 @@
     <title>Sell Art</title>
 
     <link rel="stylesheet" href="about.css">
-    <link rel="stylesheet" href="Header.css">
-    <link rel="stylesheet" href="foter.css">
+    <link rel="stylesheet" href="cssfiles/Header.css">
+    <link rel="stylesheet" href="cssfiles/foter.css">
     <link rel="stylesheet" href="Abbout.css">
-    <link rel="stylesheet" href="m.css">
+    <link rel="stylesheet" href="cssfiles/m.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap" rel="stylesheet">
