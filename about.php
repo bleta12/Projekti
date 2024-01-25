@@ -27,6 +27,13 @@
         });
     </script>
 
+    <style>
+        .card .container {
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+        }
+    </style>
+
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
@@ -150,6 +157,8 @@
             </div>
             <a href="javascript:void(0)" id="readMoreBtn2" onclick="toggleReadMore(2)">READ MORE</a>
         </div>
+        </div>
+
 
         <div class="card">
             <div class="card-img car-3"></div>
