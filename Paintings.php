@@ -27,25 +27,27 @@
 
 </head>
 
+<?php include "Header.php" ?>
+
 <body>
 
   <?php include "Header.php"  ?>
     <body>
 
-        <h1>Muse Fairytale</h1>
-        <div class="kryesori">
+    <h1>Muse Fairytale</h1>
+    <div class="kryesori">
 
-            <?php
+        <?php
 
-            include "DatabaseConnection.php";
-            include_once "PikturaRepository.php";
-            $strep = new PikturaRepository();
-            $pikturat = $strep->getAllPaintings();
-            if (!$pikturat) {
-                die("Invalid query: " . $connection->connect_error);
-            }
-            foreach ($pikturat as $piktura) {
-                echo "   <div class='picture'>
+        include "DatabaseConnection.php";
+        include_once "PikturaRepository.php";
+        $strep = new PikturaRepository();
+        $pikturat = $strep->getAllPaintings();
+        if (!$pikturat) {
+            die("Invalid query: " . $connection->connect_error);
+        }
+        foreach ($pikturat as $piktura) {
+            echo "   <div class='picture'>
                 <img src='$piktura[Piktura]' alt=''>
                 <div class='autori'>
                     <p>$piktura[Emri]</p>
@@ -53,20 +55,20 @@
                     <a class='btn btn-primary' href='ShopingCart.php' role='button'>Add to Cart</a>
                 </div>
             </div>";
-            }
-            ?>
+        }
+        ?>
 
 
 
 
-        </div>
+    </div>
 
 
 
 
 
-    </body>
-    <?php include "Footer.php" ?>
+</body>
+<?php include "Footer.php" ?>
 
 </html>
 
