@@ -24,5 +24,6 @@ class OrderRepo{
         $statement = $conn->prepare($sql);
         $statement->execute($piktura_id,$user_id,$transporti,$totali);
     }
+    
 }
 ?>

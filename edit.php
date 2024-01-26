@@ -1,4 +1,5 @@
 <?php
+session_start();
 include 'PikturaRepository.php';
 
 $id = $_GET['id'];
@@ -15,7 +16,6 @@ $piktura1 = $pikturaRepository->getPikturaById($id);
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
- <?php include "Header.php" ?>
 <body>
     <div class="container my-5">
         <h2>Edit Painting</h2>
@@ -56,7 +56,6 @@ $piktura1 = $pikturaRepository->getPikturaById($id);
         </form>
     </div>
 </body>
- <?php include "Footer.php" ?>
 </html>
 
 <?php
