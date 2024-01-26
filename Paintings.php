@@ -28,14 +28,16 @@
         if (!$pikturat) {
             die("Invalid query: " . $connection->connect_error);
         }
+
+        
         foreach ($pikturat as $piktura) {
-            echo "   <div class='picture'>
+            echo "<div class='picture'>
                 <img src='$piktura[Piktura]' alt=''>
                 <div class='autori'>
                     <p>$piktura[Emri]</p>
                     <p>$piktura[Autori]</p>
                     <p>\${$piktura['Cmimi']}</p>     
-               <a class='btn btn-primary' href='ShopingCart.php' role='button'>Add to Cart</a>
+               <a class='btn btn-primary add-to-cart' data-painting-id='{$piktura['ID']}' role='button'>Add to Cart</a>
                 </div>
             </div>";
         }
