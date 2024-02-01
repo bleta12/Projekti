@@ -70,7 +70,6 @@ document.addEventListener("DOMContentLoaded", function () {
         var slides = document.querySelectorAll('.card');
 
         slides.forEach((slide, i) => {
-            // Adjusted visibility condition
             var isVisible = i >= currentSlideIndex && i < currentSlideIndex + 2;
             slide.style.display = isVisible ? 'flex' : 'none';
         });
@@ -78,20 +77,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function nextSlide() {
         var slides = document.querySelectorAll('.card');
-        currentSlideIndex = (currentSlideIndex + 1) % (slides.length - 1); // Updated to handle 4 cards
+        currentSlideIndex = (currentSlideIndex + 1) % (slides.length - 1); 
         showSlides();
     }
 
     function prevSlide() {
         var slides = document.querySelectorAll('.card');
-        currentSlideIndex = (currentSlideIndex - 1 + slides.length - 1) % (slides.length - 1); // Updated to handle 4 cards
+        currentSlideIndex = (currentSlideIndex - 1 + slides.length - 1) % (slides.length - 1);
         showSlides();
     }
 
-    // Show initial slides
     showSlides();
 
-    // Attach event listeners to buttons
     document.getElementById('nextButton').addEventListener('click', nextSlide);
     document.getElementById('prevButton').addEventListener('click', prevSlide);
 });
@@ -108,7 +105,7 @@ document.addEventListener("DOMContentLoaded", function () {
     <header style="width: 100%;">
   <nav>
     <ul class="menu">
-        <li class="logo"><img src="sell art.png" alt="Sell Art"></li>
+        <li class="logo"><img src="photo/sell art.png" alt="Sell Art"></li>
         <li class="item"><a href="Home.php">Home</a></li>
         <li class="item"><a href="Paintings.php">Paintings</a></li>
         <li class="item"><a href="about.php">About</a></li>
