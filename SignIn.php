@@ -97,10 +97,6 @@ if (isset($_POST['submit'])) {
                 <i class='bx bxs-lock-alt' ></i>
                 <span id="passwordError" class="error" style="color: red;"></span>
             </div>
-            <div class="remember-forget">
-                <label><input type="checkbox">Remember me </label>
-                <a href="#">Forgot password?</a>
-            </div>
                 <button type="submit" name="submit" class="btn">Login</button>
             
             <div class="register-link">
