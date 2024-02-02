@@ -16,7 +16,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   $password = $_POST["password"];
   do {
 
-    $user = new User($name,$email,$username,$isAdmin,$password);
+    $user = new User($ID,$name,$email,$username,$isAdmin,$password);
 
     $userRepo = new UserRepo();
     $exist=$userRepo->insertUser($user);
