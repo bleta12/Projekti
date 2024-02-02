@@ -53,6 +53,14 @@ class OrderRepo{
         $order = $statement->fetchAll();
         return $order;
     }
+    public function getAllUsers(){
+        $conn = $this->connection;
+        $sql = "SELECT p.ID,p.piktura_id,pi.piktura,p.user_id,p.Cmimi FROM porosia p,piktura pi where p.piktura_id=pi.ID";
+        $statement = $conn->query($sql);
+        $pikturat = $statement->fetchAll();
+        return $pikturat;
+    }
+
 
     function deleteOrder($ID){
         $conn=$this->connection;
