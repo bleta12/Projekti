@@ -16,9 +16,8 @@
         text-decoration: none;
         border-radius: 4px;
         border: none;
-        font-size: 25px;
+        font-size: 23px;
         margin-left: 850px;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
 
     .buttoni:hover {
@@ -70,8 +69,8 @@
                             $totaliCmimit = $totaliCmimit + $order['Cmimi'];
                             if ($totaliCmimit === 0) {
                                 $transporti = 0;
-                            } else{
-                                $transporti=5; 
+                            } else {
+                                $transporti = 5;
                             }
 
                             echo "
@@ -107,7 +106,7 @@
 
         </div>
         <form method="POST">
-        <button type="submit" class="buttoni" name="deleteOrders">Order</button>
+            <button type="submit" class="buttoni" name="deleteOrders">Order</button>
         </form>
     </div>
 
