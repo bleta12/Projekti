@@ -49,27 +49,27 @@
                     </tr>
                 </thead>
                 <tbody>
-                  <?php               
-                   include "OrderRepo.php";
-                  
-                      $user_id = isset($_SESSION['user']['ID']) ? $_SESSION['user']['ID'] : null;
-                      
-                      if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+                    <?php
+                    include "OrderRepo.php";
+
+                    $user_id = isset($_SESSION['user']['ID']) ? $_SESSION['user']['ID'] : null;
+
+                    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         $strep2 = new OrderRepo();
                         $strep2->deleteAllOrders($user_id);
                     }
-                      $orderRepo = new OrderRepo();
-                      $orders = $orderRepo->getOrderFromUser($user_id);
-                      $totaliCmimit=0;
-                      $totali=0;
-                      $transporti=0;
-                      if(!$orders){
-                        echo"No orders available";
-                      }else{
-                        foreach($orders as $order) {
-                            $totaliCmimit=$totaliCmimit+$order['Cmimi'];
-                            if($totaliCmimit===0){
-                                $transporti=0;
+                    $orderRepo = new OrderRepo();
+                    $orders = $orderRepo->getOrderFromUser($user_id);
+                    $totaliCmimit = 0;
+                    $totali = 0;
+                    $transporti = 0;
+                    if (!$orders) {
+                        echo "No orders available";
+                    } else {
+                        foreach ($orders as $order) {
+                            $totaliCmimit = $totaliCmimit + $order['Cmimi'];
+                            if ($totaliCmimit === 0) {
+                                $transporti = 0;
                             }
 
                             echo "
@@ -104,7 +104,9 @@
             </table>
 
         </div>
-        <a style='margin-left: 850px; ' class='buttoni' href='delete2.php'>Order</a>
+        <form method="POST">
+        <button type="submit" class="btn btn-danger btn-sm" name="deleteOrders">Order</button>
+        </form>
     </div>
 
 </body>
