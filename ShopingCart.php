@@ -27,7 +27,9 @@
     }
 </style>
 
-<?php include "Header.php" ?>
+<?php include "Header.php"; ?>
+
+
 
 <body>
     <div class="container my-5">
@@ -47,26 +49,27 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <?php
-                    include "OrderRepo.php";
-
-                    $user_id = isset($_SESSION['user']['ID']) ? $_SESSION['user']['ID'] : null;
-
-
-                    $orderRepo = new OrderRepo();
-                    $orders = $orderRepo->getOrderFromUser($user_id);
-                    $totaliCmimit = 0;
-                    $totali = 0;
-                    $transporti = 0;
-                    if (!$orders) {
-                        echo "No orders available";
-                    } else {
-                        foreach ($orders as $order) {
-                            $totaliCmimit = $totaliCmimit + $order['Cmimi'];
-                            if ($totaliCmimit === 0) {
-                                $transporti = 0;
-                            } else {
-                                $transporti = 5;
+                  <?php               
+                   include "OrderRepo.php";
+                  
+                      $user_id = isset($_SESSION['user']['ID']) ? $_SESSION['user']['ID'] : null;
+                      
+                      if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+                        $strep2 = new OrderRepo();
+                        $strep2->deleteAllOrders($user_id);
+                    }
+                      $orderRepo = new OrderRepo();
+                      $orders = $orderRepo->getOrderFromUser($user_id);
+                      $totaliCmimit=0;
+                      $totali=0;
+                      $transporti=0;
+                      if(!$orders){
+                        echo"No orders available";
+                      }else{
+                        foreach($orders as $order) {
+                            $totaliCmimit=$totaliCmimit+$order['Cmimi'];
+                            if($totaliCmimit===0){
+                                $transporti=0;
                             }
 
                             echo "
@@ -75,7 +78,8 @@
                            <td><img src='$order[piktura]'></td>
                            <td>$order[emri]</td>
                            <td>\${$order['Cmimi']}</td>
-                           <td><a class='btn btn-danger btn-sm' href='delete2.php?id=$order[ID]'>Fshije</a></td>
+                           <td><a class='btn btn-danger btn-sm' href='delete2.php?id= $order[ID]'>Fshije</a></td>
+
                         <tr> ";
                         }
                         $totali = $totaliCmimit + $transporti;
