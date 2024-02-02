@@ -37,9 +37,22 @@
 
                       $orderRepo = new OrderRepo();
                       $orders = $orderRepo->getOrderFromUser($user_id);
-                      
+                      $totaliCmimit=0;
+                      $totali=0;
+                      $transporti=0;
+                      if(!$orders){
+                        echo"No orders available";
+                      }else{
                         foreach($orders as $order) {
-                            echo "    
+                            $totaliCmimit=$totaliCmimit+$order['Cmimi'];
+                            if($totaliCmimit===0){
+                                $transporti=0;
+                            }
+                            else{
+                                $transporti=5; 
+                            }
+                           
+                            echo "
                         <tr>
                            <td>$order[piktura_id]</td>
                            <td><img src='$order[piktura]'></td>
@@ -48,12 +61,30 @@
                            <td><a class='btn btn-danger btn-sm' href='delete2.php?id=$order[ID]'>Fshije</a></td>
                         <tr> ";
                         }
-                    ?>
+                        $totali=$totaliCmimit+$transporti;
+                        echo"
+                        <thead class='table-secondary'>
+    <tr>
+        <th>Cmimi</th>
+        <th>Transporti</th>
+        <th>Totali</th>
+    </tr> 
+    <tr>
+    <td>\${$totaliCmimit}</td>
+    <td>$transporti</td>
+    <td>$totali</td>
+</tr> 
+</thead>";}
+
+                 ?>
 
                 </tbody>
-            </table>
+                    </table>
+
         </div>
+        <a style='margin-left: 850px;' class='btn btn-danger btn-sm' href='delete2.php'>Order</a></td>
     </div>
+   
 </body>
 
 <?php include "Footer.php";  ?>

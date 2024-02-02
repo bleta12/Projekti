@@ -45,7 +45,7 @@ class OrderRepo{
     public function getOrderFromUser($idUser) {
         $conn = $this->connection;
     
-        $sql = "SELECT p.piktura_id,pi.Piktura as piktura,pi.Emri as emri,p.Cmimi,p.ID AS ID FROM  porosia p, piktura pi WHERE  p.piktura_id=pi.ID and user_id = ?";
+        $sql = "SELECT p.piktura_id,pi.Piktura as piktura,pi.Emri as emri,p.Cmimi,p.ID AS ID FROM  porosia p, piktura pi WHERE             p.piktura_id=pi.ID and user_id = ?";
         
         $statement = $conn->prepare($sql);
         $statement->execute([$idUser]);
@@ -69,6 +69,17 @@ class OrderRepo{
         $statment=$conn->prepare($sql);
         $statment->execute([$ID]);
     }
+
+
+    function deleteAllOrders($user_id){
+        $conn=$this->connection;
+
+        $sql="DELETE FROM porosia WHERE user_id=?";
+        $statment=$conn->prepare($sql);
+        $statment->execute([$user_id]);
+
     }
+    }
+
 
 ?>

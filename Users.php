@@ -10,7 +10,7 @@
 <body>
 <?php
 
-if (!isset($_SESSION['user'])) {
+if (!isset($_SESSION['user']['isAdmin']) || $_SESSION['user']['isAdmin'] != 1) {
     header("Location: SignIn.php");
     exit;
 }
@@ -37,24 +37,17 @@ if (!isset($_SESSION['user'])) {
 
 
                   $strep = new OrderRepo();
-                  $pikturat = $strep->getAllPaintings();
+                  $orders = $strep->getAllUsers();
 
-                if(!$pikturat){
-                    die("Invalid query: ". $connection->connect_error);
-                }
 
-                foreach($pikturat as $piktura) { 
+                foreach($orders as $order) { 
                     echo "    
                 <tr>
-                    <td>$piktura[ID]</td>
-                    <td><img src='$piktura[Piktura]'></td>
-                    <td><b>$piktura[Emri]</b>  <hr>  $piktura[Piktura]  </td>
-                    <td>$piktura[Autori]</td>
-                    <td>\${$piktura['Cmimi']}</td>
-                    <td>
-                        <a class='btn btn-primary btn-sm' href='edit.php?id=$piktura[ID]'>Ndrysho</a>
-                        <a class='btn btn-danger btn-sm' href='delete.php?id=$piktura[ID]'>Fshije</a>
-                    </td>
+                    <td>$order[ID]</td>
+                    <td><b>$order[piktura_id]</b> </td>
+                    <td><img src='$order[piktura]'></td>
+                    <td>$order[user_id]</td>
+                    <td>\${$order['Cmimi']}</td>
                 </tr>
                 ";
                 }

@@ -97,6 +97,7 @@
          }
          if (isset($_SESSION['user']) && $_SESSION['user']['isAdmin'] == 1) {
           echo '<li class="item button"><a href="Tabela.php">Menage Painting</a></li>';
+          echo '<li class="item button"><a href="Users.php">Users</a></li>';
            }
         ?>
         <li class="toggle"><span class="bars"></span></li>
