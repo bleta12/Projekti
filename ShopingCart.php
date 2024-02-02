@@ -13,12 +13,14 @@
         margin-left: 20px;
         padding: 8px 20px;
         background-color: black;
-        color: white;
+        color: #fff;
         text-decoration: none;
         border-radius: 4px;
-        font-size: 14px;
+        border: none;
+        font-size: 18px;
         display: inline-block;
-
+        margin-left: 850px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
 
     .buttoni:hover {
@@ -105,7 +107,7 @@
 
         </div>
         <form method="POST">
-        <button type="submit" class="btn btn-danger btn-sm" name="deleteOrders">Order</button>
+        <button type="submit" class="buttoni" name="deleteOrders">Order</button>
         </form>
     </div>
 
