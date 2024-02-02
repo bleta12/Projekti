@@ -10,15 +10,13 @@
 </head>
 <style>
     .buttoni {
-        margin-left: 20px;
         padding: 8px 20px;
         background-color: black;
         color: #fff;
         text-decoration: none;
         border-radius: 4px;
         border: none;
-        font-size: 18px;
-        display: inline-block;
+        font-size: 25px;
         margin-left: 850px;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
