@@ -72,6 +72,8 @@
                             $totaliCmimit = $totaliCmimit + $order['Cmimi'];
                             if ($totaliCmimit === 0) {
                                 $transporti = 0;
+                            } else{
+                                $transporti=5; 
                             }
 
                             echo "
