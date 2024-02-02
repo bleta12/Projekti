@@ -16,6 +16,7 @@ if (isset($_POST['submit'])) {
             $_SESSION['user'] = [
                 'username' => $user->getUsername(),
                 'email' => $user->getEmail(),
+                'ID' => $user->getId(),
                 'isAdmin' => $user->getIsAdmin()
             ];
             header("location: Home.php");

@@ -59,6 +59,7 @@ class UserRepo{
         $userData=$statement->fetch();
         if ($userData) {
             $user = new User(
+                $userData['ID'],
                 $userData['Name'],
                 $userData['Email'],
                 $userData['Username'],

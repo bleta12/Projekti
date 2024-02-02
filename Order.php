@@ -8,13 +8,14 @@ class Order
     private $user_id;
     private $transporti;
     private $totali;
+    private $cmimi;
 
 
-    public function __construct($piktura_id,$user_id, $transporti, $totali)
+    public function __construct($piktura_id,$user_id,$cmimi, $totali)
     {
         $this->piktura_id = $piktura_id;
         $this->user_id = $user_id;
-        $this->transporti = $transporti;
+        $this->cmimi = $cmimi;
         $this->totali = $totali;
     }
 
@@ -50,5 +51,11 @@ class Order
     public function setUser_Id($user_id)
     {
         $this->user_id = $user_id;
+    }
+    public function getCmimi(){
+        return $this->cmimi;
+    }
+    public function setCmimi($cmimi){
+        $this->cmimi = $cmimi;
     }
 }

@@ -48,8 +48,8 @@ if (!isset($_SESSION['user'])) {
                     echo "    
                 <tr>
                     <td>$piktura[ID]</td>
-                    <td><a href='$piktura[Piktura]'>$piktura[Piktura]</a></td>
-                    <td>$piktura[Emri]</td>
+                    <td><img src='$piktura[Piktura]'></td>
+                    <td><b>$piktura[Emri]</b>  <hr>  $piktura[Piktura]  </td>
                     <td>$piktura[Autori]</td>
                     <td>\${$piktura['Cmimi']}</td>
                     <td>
@@ -66,6 +66,7 @@ if (!isset($_SESSION['user'])) {
         </div>
     </div>
 </body>
+
 
 <?php include "Footer.php" ?>
 </html>

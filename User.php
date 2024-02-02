@@ -9,7 +9,8 @@ class User{
   private $isAdmin;
   private $password;
 
-  public function __construct($name,$email,$username,$isAdmin,$password){
+  public function __construct($ID,$name,$email,$username,$isAdmin,$password){
+    $this->ID=$ID;
     $this->name=$name;
     $this->email=$email;
     $this->username=$username;
@@ -17,7 +18,9 @@ class User{
     $this->password=$password;
    
 }
-
+public function getId(){
+    return $this->ID;
+}
 
 public function getName(){
     return $this->name;

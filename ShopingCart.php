@@ -1,44 +1,3 @@
-<?php
-include_once 'Order.php';
-include_once 'OrderRepo.php';
-
-$host = "127.0.0.1";
-$username = "root";
-$password = "";
-$dbname = "paintings";
-
-$conn = new mysqli($host, $username, $password, $dbname);
-
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
-
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $piktura = $_POST["Piktura"];
-    $emri = $_POST["Emri"];
-    $autori = $_POST["Autori"];
-    $cmimi = $_POST["Cmimi"];
-
-    $user_id = 1;
-    $transporti = "5";
-    $GetCmimi = 1500;
-    $totali = 5 * $GetCmimi;
-
-    do {
-
-        $order = new Order($piktura, $user_id, $transporti, $totali);
-
-        $orderRepo = new OrderRepo();
-
-        $exist = $orderRepo->insertOrder($order, $conn);
-
-        header("location: Tabela.php");
-        exit;
-    } while (false);
-}
-
-?>
-
 <html lang="en">
 
 <head>
@@ -63,26 +22,32 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <thead class="table-secondary">
                     <tr>
                         <th>ID</th>
-                        <th>Emri Porosise</th>
+                        <th>Piktura</th>
+                        <th>Emri</th>
                         <th>Cmimi</th>
+                    
                     </tr>
                 </thead>
                 <tbody>
-                    <?php
-                    $sql = "SELECT * FROM pikurat";
-                    $result = $conn->query($sql);
-                    if ($result !== false && $result->num_rows > 0) {
-                        while ($row = $result->fetch_assoc()) {
-                            echo "<tr>
-                                    <td>" . $row["id"] . "</td>
-                                    <td>" . $row["Emri"] . "</td>
-                                    <td>" . $row["Emri_Autorit"] . "</td>
-                                    <td>" . $row["cmimi"] . "</td>
-                                  </tr>";
+                  <?php               
+                   include "OrderRepo.php";
+                  
+                      $user_id = isset($_SESSION['user']['ID']) ? $_SESSION['user']['ID'] : null;
+                      
+
+                      $orderRepo = new OrderRepo();
+                      $orders = $orderRepo->getOrderFromUser($user_id);
+                      
+                        foreach($orders as $order) {
+                            echo "    
+                        <tr>
+                           <td>$order[piktura_id]</td>
+                           <td><img src='$order[piktura]'></td>
+                           <td>$order[emri]</td>
+                           <td>\${$order['Cmimi']}</td>
+                           <td><a class='btn btn-danger btn-sm' href='delete2.php?id=$order[ID]'>Fshije</a></td>
+                        <tr> ";
                         }
-                    } else {
-                        echo "<tr><td colspan='3'>No orders available</td></tr>";
-                    }
                     ?>
 
                 </tbody>
@@ -94,7 +59,3 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <?php include "Footer.php";  ?>
 
 </html>
-
-<?php
-$conn->close();
-?>

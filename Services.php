@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="cssfiles/Header.css">
     <link rel="stylesheet" href="cssfiles/foter.css">
     <link rel="stylesheet" href="cssfiles/services.css">
-    <link rel="stylesheet" href="Abbout.css">
+
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script
@@ -66,21 +66,7 @@
     return true;
   }
         </script>
-           <script>
-            function toggleReadMore(cardNumber) {
-                var extraText = document.getElementById("extraText" + cardNumber);
-                var btnText = document.getElementById("readMoreBtn" + cardNumber);
-    
-                if (extraText.style.display === "none" || extraText.style.display === "") {
-                    extraText.style.display = "block";
-                    btnText.innerHTML = "READ LESS";
-                } else {
-                    extraText.style.display = "none";
-                    btnText.innerHTML = "READ MORE";
-                }
-            }
-        </script>
-           <?php  
+         <?php  
     $faqja='SELLART';
     setcookie("faqja",$faqja,time()+30*24*60*60);
     ?>
@@ -118,6 +104,21 @@
 </nav>
 </header>
 
+       <script>
+            function toggleReadMore(cardNumber) {
+                var extraText = document.getElementById("extraText" + cardNumber);
+                var btnText = document.getElementById("readMoreBtn" + cardNumber);
+    
+                if (extraText.style.display === "none" || extraText.style.display === "") {
+                    extraText.style.display = "block";
+                    btnText.innerHTML = "READ LESS";
+                } else {
+                    extraText.style.display = "none";
+                    btnText.innerHTML = "READ MORE";
+                }
+            }
+        </script>
+
      
        <div class="permbajtja">
          <div class="titulliServices" style="background-image: url(photo/titulli.jpg);">
@@ -132,7 +133,7 @@
             </div>
                 <h2>Communications</h2>
                 <p>Hear from our satisfied customers who have found joy and inspiration in our art. Read their testimonials and discover why SELL ART is a trusted source for art enthusiasts.</p>
-                <div id="extraText1" class="hidden">
+                <div id="extraText1" class="hidden" style="display: none;">
                   <p>Our commitment to excellence is reflected in the quality of materials we use.
                      From premium canvas to archival inks, every piece is crafted with meticulous attention to detail.</p>
               </div>
@@ -144,7 +145,7 @@
                 </div>
                 <h2>Features</h2>
                 <p>Become part of our vibrant art community. Engage with us on social media, attend events, and connect with fellow art enthusiasts who share a passion for creativity.</p>
-                <div id="extraText2" class="hidden">
+                <div id="extraText2" class="hidden" style="display: none;">
                   <p>Experience exclusivity with our limited edition pieces.
                     Each numbered and signed edition is a rare gem, adding a touch of prestige to your art collection.</p>
               </div>
@@ -156,7 +157,7 @@
               </div>
               <h2>Customer Support and Engagement</h2>
               <p>Customers who receive a personalized experience will return to their favorite painting to buy more in the future than disengaged customers.</p>
-              <div id="extraText3" class="hidden">
+              <div id="extraText3" class="hidden" style="display: none;">
                 <p>Our artistic philosophy shapes every stroke and color, creating a unique and meaningful artistic expression.</p>
             </div>
             <a href="javascript:void(0)"id="readMoreBtn3" class="readMoreBtn" onclick="toggleReadMore(3)">READ MORE</a>

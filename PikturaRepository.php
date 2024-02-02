@@ -67,7 +67,7 @@ class PikturaRepository{
             $statement->execute([$piktura,$emri,$autori,$cmimi,$id]);
             }
     }
-    function getPikturaById($id){
+   public function getPikturaById($id){
         $conn = $this->connection;
 
         $sql = "SELECT * FROM piktura WHERE Id=?";
