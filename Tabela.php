@@ -9,11 +9,12 @@
   <?php include "Header.php"  ?>
 <body>
 <?php
-
-if (!isset($_SESSION['user'])) {
+ 
+  if (!isset($_SESSION['user']['isAdmin']) || $_SESSION['user']['isAdmin'] != 1) {
     header("Location: SignIn.php");
     exit;
 }
+
 ?>
     <div class="container my-5">
         <h2>Lista e Pikturave</h2>
