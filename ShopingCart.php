@@ -25,8 +25,8 @@
                         <th>Piktura</th>
                         <th>Emri</th>
                         <th>Cmimi</th>
-                    
-                    </tr>
+                        <th>Modifiko</th>
+                    </tr> 
                 </thead>
                 <tbody>
                   <?php               
