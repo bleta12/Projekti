@@ -127,7 +127,7 @@ document.addEventListener("DOMContentLoaded", function () {
         echo '<li class="item button secondary"><a href="SignUp.php">Sign Up</a></li>';     
          }
          if (isset($_SESSION['user']) && $_SESSION['user']['isAdmin'] == 1) {
-          echo '<li class="item button"><a href="Tabela.php">Menage Painting</a></li>';
+          echo '<li class="item button"><a href="Tabela.php">Manage Painting</a></li>';
           echo '<li class="item button"><a href="Users.php">Users</a></li>';
            }
         ?>

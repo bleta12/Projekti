@@ -19,8 +19,8 @@ if (isset($_GET['logout'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sell Art</title>
     <link rel="stylesheet" href="cssfiles/Header.css">
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
-    <script>
+  <!--  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>-->
+  <!--  <script>
         $(function() {
             $(".toggle").on("click", function() {
                 if ($(".item").hasClass("active")) {
@@ -30,7 +30,24 @@ if (isset($_GET['logout'])) {
                 }
             });
         });
-    </script>
+    </script> -->
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var toggleButton = document.querySelector(".toggle");
+        var items = document.querySelectorAll(".item");
+
+        toggleButton.addEventListener("click", function() {
+            items.forEach(function(item) {
+                if (item.classList.contains("active")) {
+                    item.classList.remove("active");
+                } else {
+                    item.classList.add("active");
+                }
+            });
+        });
+    });
+</script>
+
 
     <?php
     $faqja = 'SELLART';
